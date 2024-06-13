@@ -1,4 +1,4 @@
-﻿# Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
+# Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
 # 规则版本: 1.4.8
 # 更新时间: 2024-05-10
 # 
@@ -574,11 +574,11 @@
 127.0.0.1 zeus.ad.xiaomi.com
 # Title: 秋风广告规则 End
 
-# Title: DD-AD广告规则
+# [DD-AD Adblock List]
 # Title: hosts.txt
-# Last Modified: 2024-06-04 08:38:15
+# Last Modified: 2024-06-13 08:38:36
 # Homepage: https://github.com/afwfv/DD-AD
-# This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
+# 👇This Part Merge from: 大圣净化 (https://raw.githubusercontent.com/jdlingyu/ad-wars/master/hosts)
 127.0.0.1 c.sayhi.360.cn
 127.0.0.1 ggs.myzaker.com
 127.0.0.1 p-l.play.aiseet.atianqi.com
@@ -2225,7 +2225,7 @@
 127.0.0.1 vstat.v.blog.sohu.com
 127.0.0.1 msg.ptqy.gitv.tv
 127.0.0.1 ads-go.adroi.com.cn
-#This Part Merge from: 1024网站及澳门皇家赌场及恶意广告主机列表 (https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts)
+# 👇This Part Merge from: 1024网站及澳门皇家赌场及恶意广告主机列表 (https://raw.githubusercontent.com/Goooler/1024_hosts/master/hosts)
 127.0.0.1 www.chemdraw.com.cn
 127.0.0.1 exoclick.com
 127.0.0.1 focustimeshk.com
@@ -5437,6 +5437,7 @@
 104.21.14.198            u3c3.com
 104.21.48.132            www.micmicidol.com
 34.117.241.205           sexygirl.cc
+45.79.102.229             youravhost.net
 # 104.21.235.180          buondua.com
 # Nsfw End
 
@@ -5449,7 +5450,9 @@
 104.16.16.119              streamtape.com
 104.16.16.119              doods.pro
 104.16.16.119              streamwish.to
+104.16.16.119              streamwish.com
 104.16.16.119              vembed.net
+104.16.16.119              vidhidepro.com
 # Supjav End
 
 #avple Start
@@ -5558,6 +5561,7 @@
 104.16.16.119              thinkany.ai
 104.16.16.119              www.boobpedia.com
 104.16.16.119              dubocool.com
+
 # cloudflare End
 
 # everia Start
@@ -5570,9 +5574,10 @@
 104.16.16.119              yunabox.top
 104.16.16.119              nekobox.top
 104.16.16.119              nezumi.my.id
-#104.16.16.119              everiaeveria.b-cdn.net
-#104.16.16.119              www.everiaclub.com
-#104.16.16.119              files.everiaclub.com
+104.16.16.119              imgyagi.top
+104.16.16.119              everiaeveria.b-cdn.net
+104.16.16.119              www.everiaclub.com
+104.16.16.119              files.everiaclub.com
 # everia End
 
 # wallhaven Start
