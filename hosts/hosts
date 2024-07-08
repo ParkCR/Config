@@ -1,7 +1,7 @@
 !Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
 
-!版本号: 1.4.9-release
-!上次更新日期: 2024-06-22
+!版本号: 1.5.0-release
+!上次更新日期: 2024-06-29
 
 !项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 
@@ -14,7 +14,7 @@
 !This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license.
 
 !AD:
-!倾城极速 - 畅游世界，高速互联！官网：https://wcnmdmht.lol/sb 官网2：https://panel.qc02.xyz
+!倾城极速 - 畅游世界，高速互联！官网：https://panel.qqcjs.top 官网2：https://n3b53vrt.wcnmdmht.biz
 
 
 127.0.0.1 localhost
@@ -56,6 +56,7 @@
 127.0.0.1 adfilter.imtt.qq.com
 127.0.0.1 adguanggao.eee114.com
 127.0.0.1 adjust.cn
+127.0.0.1 adjust.com
 127.0.0.1 adkwai.com
 127.0.0.1 adlink-api.huan.tv
 127.0.0.1 adm.funshion.com
@@ -111,6 +112,8 @@
 127.0.0.1 adv.sec.miui.com
 127.0.0.1 advertiseonbing.azureedge.net
 127.0.0.1 advertising-api-eu.amazon.com
+127.0.0.1 advertising-api-fe.amazon.com
+127.0.0.1 advertising-api.amazon.com
 127.0.0.1 advertising.apple.com
 127.0.0.1 advertising.yahoo.com
 127.0.0.1 advertising.yandex.ru
@@ -144,6 +147,8 @@
 127.0.0.1 analyze.lemurbrowser.com
 127.0.0.1 andrqd.play.aiseet.atianqi.com
 127.0.0.1 apd-pcdnwxlogin.teg.tencent-cloud.net
+127.0.0.1 apd-pcdnwxnat.teg.tencent-cloud.net
+127.0.0.1 apd-pcdnwxstat.teg.tencent-cloud.net
 127.0.0.1 api-access.pangolin-sdk-toutiao.com
 127.0.0.1 api-access.pangolin-sdk-toutiao1.com
 127.0.0.1 api-access.pangolin-sdk-toutiao2.com
@@ -179,11 +184,13 @@
 127.0.0.1 beacon.qq.com
 127.0.0.1 beacons.gvt2.com
 127.0.0.1 beizi.biz
+127.0.0.1 bianxian.com
 127.0.0.1 bingads.microsoft.com
 127.0.0.1 bj.ad.track.66mobi.com
 127.0.0.1 books-analytics-events.apple.com
 127.0.0.1 bugly.qq.com
 127.0.0.1 business-api.tiktok.com
+127.0.0.1 c.bidtoolads.com
 127.0.0.1 c.evidon.com
 127.0.0.1 c.gj.qq.com
 127.0.0.1 c.kuaiduizuoye.com
@@ -204,6 +211,12 @@
 127.0.0.1 collect.kugou.com
 127.0.0.1 commdata.v.qq.com
 127.0.0.1 config.chsmarttv.com
+127.0.0.1 conn-service-cn-03.allawntech.com
+127.0.0.1 conn-service-cn-04.allawntech.com
+127.0.0.1 conn-service-cn-05.allawntech.com
+127.0.0.1 conn-service-in-03.allawnos.com
+127.0.0.1 conn-service-in-04.allawnos.com
+127.0.0.1 conn-service-in-05.allawnos.com
 127.0.0.1 crashlytics.com
 127.0.0.1 crashlyticsreports-pa.googleapis.com
 127.0.0.1 csjplatform.com
@@ -260,6 +273,7 @@
 127.0.0.1 grs.platform.dbankcloud.ru
 127.0.0.1 h-adashx.ut.taobao.com
 127.0.0.1 h.trace.qq.com
+127.0.0.1 hanlanad.com
 127.0.0.1 henzanapp.com
 127.0.0.1 hexagon-analytics.com
 127.0.0.1 hiboard-drcn.ai.dbankcloud.cn
@@ -308,6 +322,7 @@
 127.0.0.1 launcher.smart-tv.cn
 127.0.0.1 launcherimg.smart-tv.cn
 127.0.0.1 lf3-ad-union-sdk.pglstatp-toutiao.com
+127.0.0.1 litchiads.com
 127.0.0.1 liveats-vod.video.ptqy.gitv.tv
 127.0.0.1 livemonitor.huan.tv
 127.0.0.1 livep.l.aiseet.atianqi.com
@@ -452,6 +467,7 @@
 127.0.0.1 sdk.cferw.com
 127.0.0.1 sdk.e.qq.com
 127.0.0.1 sdk.hzsanjiaomao.com
+127.0.0.1 sdk.markmedia.com.cn
 127.0.0.1 sdk.mobads.adwangmai.com
 127.0.0.1 sdkconf.avlyun.com
 127.0.0.1 sdkconfig.ad.intl.xiaomi.com
@@ -530,6 +546,7 @@
 127.0.0.1 tracker.gitee.com
 127.0.0.1 tracking.miui.com
 127.0.0.1 tracking.rus.miui.com
+127.0.0.1 tsvrv.com
 127.0.0.1 tvuser-ch.cedock.com
 127.0.0.1 tx-ad.a.yximgs.com
 127.0.0.1 tx-kmpaudio.pull.yximgs.com
@@ -596,6 +613,7 @@
 127.0.0.1 ws.sj.qq.com
 127.0.0.1 www42.zskwai.com
 127.0.0.1 wxa.wxs.qq.com
+127.0.0.1 wximg.wxs.qq.com
 127.0.0.1 wxsnsad.tc.qq.com
 127.0.0.1 wxsnsdy.wxs.qq.com
 127.0.0.1 wxsnsdythumb.wxs.qq.com
@@ -612,6 +630,8 @@
 127.0.0.1 youku-acs.m.taobao.com
 127.0.0.1 youxi.kugou.com
 127.0.0.1 zeus.ad.xiaomi.com
+
+
 
 
 # [DD-AD Adblock List]
@@ -5405,7 +5425,8 @@
 # 172.66.41.44              missav.com
 104.16.16.119            myav.com
 104.16.16.119            njav.tv
-172.67.169.216          www.sotwe.com
+104.16.16.119          www.sotwe.com
+# 172.67.169.216          www.sotwe.com
 104.21.57.195            www.metarthunter.com
 209.50.58.179            www.sex.com
 89.187.162.241          cdn.sex.com
