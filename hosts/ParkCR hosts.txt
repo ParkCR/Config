@@ -1,0 +1,329 @@
+# OC渲染 Start
+127.0.0.1 chinanet.io # #
+127.0.0.1 live.refractivesoftware.com # #
+127.0.0.1 live1.refractivesoftware.com # #
+127.0.0.1 live2.refractivesoftware.com # #
+127.0.0.1 live3.refractivesoftware.com # #
+127.0.0.1 live4.refractivesoftware.com # #
+127.0.0.1 live5.refractivesoftware.com # #
+127.0.0.1 live6.refractivesoftware.com # #
+127.0.0.1 live.octanerender.com # #
+127.0.0.1 live.octanerender.com/live/v1 # #
+127.0.0.1 live.octanerender.com/live/v2 # #
+127.0.0.1 live/v1/live.octanerender.com # #
+127.0.0.1 live/v2/live.octanerender.com # #
+127.0.0.1 live1.octanerender.com # #
+127.0.0.1 live2.octanerender.com # #
+127.0.0.1 live3.octanerender.com # #
+127.0.0.1 live4.octanerender.com # #
+127.0.0.1 live5.octanerender.com # #
+127.0.0.1 live6.octanerender.com # #
+127.0.0.1 account.otoy.com # #
+127.0.0.1 local.otoylocal.com # #
+127.0.0.1 orc.otoy.com # #
+127.0.0.1 54.243.210.230 # #
+127.0.0.1 169.54.33.187 # #
+127.0.0.1 58.20.196.160 # #
+127.0.0.1 169.54.129.22 # #
+127.0.0.1 account.otoy.com/sign_up # #
+127.0.0.1 bridge.octanerender.com # #
+# OC渲染 End
+
+# r18.clickme Start
+104.26.3.83	r18.clickme.net
+172.67.70.135	r18.clickme.net
+# r18.clickme End
+
+# pornhub Start
+66.254.114.41	pornhub.com
+104.16.16.119            xxxsave.net
+104.16.16.119           cdn1.xxxsave.net
+104.16.16.119           cdn2.xxxsave.net
+104.16.16.119           cdn3.xxxsave.net
+104.16.16.119           cdn4.xxxsave.net
+104.16.16.119           cdn5.xxxsave.net
+104.16.16.119           cdn6.xxxsave.net
+104.16.16.119           cdn7.xxxsave.net
+104.16.16.119           cdn8.xxxsave.net
+104.16.16.119           cdn9.xxxsave.net
+104.16.16.119           cdn10.xxxsave.net
+104.16.16.119            saveporn.net
+104.16.16.119            file1.vidify.io
+152.195.33.132          cv-h.phncdn.com
+152.195.33.132          phncdn.com
+# pornhub End
+
+# Nsfw Start
+104.16.16.119            www.javbus.com
+172.67.80.44              www.javbus.com
+104.25.112.111	www.javbus.com
+104.21.21.4 	www.atozproxy.com
+199.96.61.1	www.proxysite.com
+104.21.234.81            www.genmirror.com
+104.21.27.10	www.proxy-youtube.com
+104.21.234.80	www.genmirror.com
+38.63.52.222	www.lianjiajr.net
+151.101.1.140	www.reddit.com
+23.199.47.149            v16m.tiktokcdn.com
+172.67.195.106	tikviewer.com
+104.21.49.230            javdb.com
+172.67.195.92            javdb.com
+104.21.55.147            javdb40.com
+104.16.16.119            missav.com
+104.16.16.119            missav.live
+104.16.16.119            missav789.com
+# 172.66.41.44              missav.com
+104.16.16.119            myav.com
+104.16.16.119            njav.tv
+104.16.16.119          www.sotwe.com
+# 172.67.169.216          www.sotwe.com
+104.21.57.195            www.metarthunter.com
+209.50.58.179            www.sex.com
+89.187.162.241          cdn.sex.com
+172.67.146.10            www.sehuatang.net
+3.223.23.129              javfilms.com
+104.19.128.100          theporndude.com
+172.64.134.22            thothub.to
+172.64.129.20            fyptt.to
+184.154.69.246          namethatporn.com
+174.127.195.202        sexinsex.net
+172.247.21.147          www.taohuazu.com
+193.233.203.21          btsow.mom
+172.67.212.251          freejavbt.com
+104.26.2.22                solji.kim
+104.21.233.153          nsfw.xxx
+198.98.54.92              yande.re
+104.16.16.119            xslist.org
+104.21.77.28              xslist.org
+172.67.203.226          m1.xslist.org
+104.18.22.206            civitai.com
+104.18.22.206            image.civitai.com
+172.67.175.133          16k.club
+172.67.175.133          cn.16k.club
+172.67.175.133          img.16k.club
+172.67.134.57            so.techlife.app
+59.106.195.179          sougouwiki.com
+104.26.15.129            ytapi.download
+104.26.15.129            cdn03.ytapi.download
+188.114.96.3              souka.xyz
+104.21.44.118            projectjav.com
+104.21.235.64            www.141jav.com
+198.251.89.38            sukebei.nyaa.si
+104.16.16.119            sukebeisi.sitescrack.host
+104.21.234.45            paipancon.com
+172.67.180.203          avgle.com
+172.67.68.107            kisscos.net
+172.67.206.15            www.javlibrary.com
+104.16.16.119            javlib.com
+104.16.16.119            ijavtorrent.com
+104.16.16.119            images.ijavtorrent.com
+104.26.7.125              thisav.com
+104.26.6.251              njavtv.com
+104.16.16.119              nanojav.com
+104.16.16.119              m.nanojav.com
+172.67.130.46            xiutaku.com
+104.23.130.4              jable.tv
+104.23.130.4              assets-cdn.jable.tv
+104.23.130.4              assets.jable.tv
+104.23.130.4              assetscdn.jable.tv
+104.21.234.45            op1.paipancon.com
+104.21.234.45            sv3.paipancon.com
+104.21.234.45            sv2.paipancon.com
+104.16.16.119            fl.paipancon.com
+104.21.234.45            paipancon.com
+188.166.248.250        hotgirl.asia
+104.16.16.119            mogura.my.id  
+146.75.92.158            video.twimg.com
+# 93.184.215.217          video.twimg.com
+# 146.75.80.159            pbs.twimg.com
+146.75.28.159            pbs.twimg.com
+77.88.55.77                yandex.com
+198.204.241.2            photo.camcam.cc
+151.101.129.140        v.redd.it
+149.154.164.13          telegra.ph
+91.195.240.117          javsubs91.com
+172.233.137.238          avtop10.com
+172.67.68.39              sexbjcam.com
+104.19.136.100           spankbang.com
+104.21.14.198            u3c3.com
+104.21.48.132            www.micmicidol.com
+34.117.241.205           sexygirl.cc
+45.79.102.229             youravhost.net
+# 104.21.235.180          buondua.com
+# Nsfw End
+
+#Supjav Start
+104.16.16.119              supjav.com
+104.16.16.119              img.supjav.com
+#TV线路 fst线路 st线路 ds线路 sw线路 vh线路 TV线路
+104.16.16.119              emturbovid.com
+104.16.16.119              fc2stream.tv
+104.16.16.119              streamtape.com
+104.16.16.119              doods.pro
+104.16.16.119              streamwish.to
+104.16.16.119              streamwish.com
+104.16.16.119              vembed.net
+104.16.16.119              vidhidepro.com
+104.16.16.119              turboviplay.com
+# Supjav End
+
+#avple Start
+172.67.71.70	assert.avple.tv
+172.67.71.70	asserts.avple.tv
+172.67.71.70	www.avple.tv
+172.67.71.70	en.avple.tv
+172.67.71.70	avple.tv
+# avple End
+
+
+# hentai-cosplays Start
+104.16.16.119                hentai-cosplays.com
+104.16.16.119                zh.hentai-cosplays.com
+104.16.16.119                ja.hentai-cosplays.com
+104.16.16.119                ko.hentai-cosplays.com
+104.16.16.119                static.hentai-cosplays.com
+104.16.16.119                static1.hentai-cosplays.com
+104.16.16.119                static2.hentai-cosplays.com
+104.16.16.119                static3.hentai-cosplays.com
+104.16.16.119                static4.hentai-cosplays.com
+104.16.16.119                static5.hentai-cosplays.com
+104.16.16.119                static6.hentai-cosplays.com
+104.16.16.119                static7.hentai-cosplays.com
+104.16.16.119                static8.hentai-cosplays.com
+104.16.16.119                static9.hentai-cosplays.com
+104.16.16.119                static10.hentai-cosplays.com
+104.16.16.119                static11.hentai-cosplays.com
+104.16.16.119                static12.hentai-cosplays.com
+104.16.16.119                static13.hentai-cosplays.com
+104.16.16.119                static14.hentai-cosplays.com
+104.21.235.137              video06.videos-upload.com
+# hentai-cosplays End
+
+# avgle Start
+172.67.180.203          avgle.com
+45.133.44.10              static-clst.avgle.com
+# avgle End
+
+# cloudflare Start
+104.16.16.119              buondua.com
+104.16.16.119              cdn.buondua.com
+104.16.16.119              limbopro.com
+104.16.16.119              urlebird.com
+104.16.16.119              ikanins.com
+104.16.16.119              www.ikanins.com
+104.16.16.119              img.erogazou.gallery
+104.16.16.119              img2.erogazou.gallery
+104.16.16.119              erogazou.gallery
+104.16.16.119              bi-girl.net
+104.16.16.119              erogazooo.club
+104.16.16.119              erogirl.net
+104.16.16.119              goddess247.com
+104.16.16.119              hitxhot.com
+104.16.16.119              hitxhot.org
+104.16.16.119              www.hitxhot.org
+104.16.16.119              ososedki.com
+104.16.16.119              www.ilovexs.com
+104.16.16.119              pics.avjiasu.com
+104.16.16.119              avitter.net
+104.16.16.119              gimy.ai
+104.16.16.119              javdb522.com
+104.16.16.119              c0.jdbstatic.com
+104.16.16.119              legs.a-hadaka.jp
+104.16.16.119              a-hadaka.jp
+104.16.16.119              onejav.com
+104.16.16.119              3600000.xyz
+104.16.16.119              en.jrants.com
+104.16.16.119              jrants.com
+104.16.16.119              javhd.today
+104.16.16.119              javday.tv
+104.16.16.119              hpjav.tv
+104.16.16.119              taiav.com
+104.16.16.119              happy.5ge.net
+104.16.16.119              static.5ge.net
+104.16.16.119              androsound.ru
+104.16.16.119              www.abskoop.com
+104.16.16.119              made.porn
+104.16.16.119              mrcong.com
+104.16.16.119              lux.mrcong.com
+104.16.16.119              javtiful.com
+104.16.16.119              www.24fa.com
+104.16.16.119              netflav.com
+104.16.16.119              netflav5.com
+104.16.16.119              cableav.tv
+104.16.16.119              www.croxy.red
+#104.16.16.119              www.depvailon.com
+104.16.16.119              www.ecosia.org
+104.16.16.119              prompthero.com
+104.16.16.119              kissjav.com
+104.16.16.119              javgg.net
+104.16.16.119              images.javgg.net
+104.16.16.119              www.croxyproxy.com
+104.16.16.119              reprint-kh.com
+104.16.16.119              javtree.com
+104.16.16.119              7mmtv.sx
+104.16.16.119              javmovs.com
+104.16.16.119              www.perplexity.ai
+104.16.16.119              javmulu.net
+104.16.16.119              www.winkav.com
+104.16.16.119              sexkbj.com
+104.16.16.119              nudebird.biz
+104.16.16.119              cosplaytele.com
+104.16.16.119              x6o.com
+104.16.16.119              aoyo.ai
+104.16.16.119              thinkany.ai
+104.16.16.119              www.boobpedia.com
+104.16.16.119              dubocool.com
+
+# cloudflare End
+
+# everia Start
+104.16.16.119              everia.club
+# 104.21.74.36               everia.club
+104.16.16.119              takobox.top
+104.16.16.119              hitsuji.my.id
+104.16.16.119              quenbox.top
+104.16.16.119              kumabox.top
+104.16.16.119              yunabox.top
+104.16.16.119              nekobox.top
+104.16.16.119              nezumi.my.id
+104.16.16.119              imgyagi.top
+104.16.16.119              everiaeveria.b-cdn.net
+104.16.16.119              www.everiaclub.com
+104.16.16.119              files.everiaclub.com
+# everia End
+
+# wallhaven Start
+#104.26.15.163              th.wallhaven.cc
+#104.26.15.163              w.wallhaven.cc
+#104.26.15.163              www.wallhaven.cc
+#104.26.15.163              wallhaven.cc
+#104.26.15.163              alpha.wallhaven.cc
+# wallhaven End
+
+# fix google translate Start
+216.239.32.40             translate.googleapis.com
+216.239.32.40             translate.google.com
+# fix google translate End
+
+# 未分类 Start
+127.0.0.1                   ns.take2games.com
+127.0.0.1                   nba2k14.pc.2ksports.com
+162.240.72.31            t66y.com
+172.67.141.4              thotsbay.tv
+165.227.5.53              hide.me
+142.4.204.230            www.turbohide.org
+192.95.4.125              www.kproxy.com
+194.187.168.100         www.qwant.com
+40.89.244.232             duckduckgo.com
+216.218.239.42          www.startpage.com
+172.247.242.179        www.wandou.pro
+120.55.163.96              ai.dawnmark.cn
+18.164.174.23              huggingface.co
+195.201.99.166              searx.space
+107.180.1.33              zqjy.info
+51.68.155.228             thatpervert.com
+104.16.248.1               fanqiangdang.com
+54.192.18.64               www.prestige-av.com
+151.101.1.140              i.redd.it
+151.101.1.140              external-preview.redd.it
+# 未分类 End
