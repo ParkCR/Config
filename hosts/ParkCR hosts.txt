@@ -155,6 +155,7 @@
 #Supjav Start
 104.16.16.119              supjav.com
 104.16.16.119              img.supjav.com
+104.16.16.119              lk1.supremejav.com
 #TV线路 fst线路 st线路 ds线路 sw线路 vh线路 TV线路
 104.16.16.119              emturbovid.com
 104.16.16.119              fc2stream.tv
@@ -273,6 +274,7 @@
 104.16.16.119              thinkany.ai
 104.16.16.119              www.boobpedia.com
 104.16.16.119              dubocool.com
+104.16.16.119              trendszine.com
 
 # cloudflare End
 
