@@ -233,8 +233,8 @@
 104.16.16.119              a-hadaka.jp
 104.16.16.119              onejav.com
 104.16.16.119              3600000.xyz
-104.16.16.119              en.jrants.com
-104.16.16.119              jrants.com
+# 104.16.16.119              en.jrants.com
+# 104.16.16.119              jrants.com
 104.16.16.119              javhd.today
 104.16.16.119              javday.tv
 104.16.16.119              hpjav.tv
