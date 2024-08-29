@@ -329,3 +329,5 @@
 151.101.1.140              i.redd.it
 151.101.1.140              external-preview.redd.it
 # 未分类 End
+# oggi 官网
+182.236.92.146            oggi.jp
