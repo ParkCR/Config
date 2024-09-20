@@ -138,7 +138,7 @@
 # 146.75.80.159            pbs.twimg.com
 146.75.28.159            pbs.twimg.com
 77.88.55.77                yandex.com
-198.204.241.2            photo.camcam.cc
+142.54.163.90            photo.camcam.cc
 151.101.129.140        v.redd.it
 149.154.164.13          telegra.ph
 91.195.240.117          javsubs91.com
