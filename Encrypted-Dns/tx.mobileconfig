@@ -21,7 +21,7 @@
                 <key>PayloadDescription</key>
                 <string>腾讯DNSPod Encrypted DNS over HTTPS</string>
                 <key>PayloadDisplayName</key>
-                <string>DNSPod DoH</string>
+                <string>腾讯DoH</string>
                 <key>PayloadIdentifier</key>
                 <string>com.apple.dnsSettings.managed.C498EC0C-EF6C-44F0-BFB7-0000658B99AC</string>
                 <key>PayloadType</key>
