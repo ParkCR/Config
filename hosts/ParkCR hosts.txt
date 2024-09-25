@@ -149,6 +149,13 @@
 104.21.48.132            www.micmicidol.com
 34.117.241.205           sexygirl.cc
 45.79.102.229             youravhost.net
+104.16.16.119              ios.pipigou889.top
+104.16.16.119              jjgirls.com
+
+# 两个日系杂志的图床
+18.238.80.58                livedoor.blogimg.jp
+18.238.80.58                resize.blogsys.jp
+
 # 104.21.235.180          buondua.com
 # Nsfw End
 
@@ -175,30 +182,6 @@
 172.67.71.70	en.avple.tv
 172.67.71.70	avple.tv
 # avple End
-
-
-# hentai-cosplays Start
-104.16.16.119                hentai-cosplays.com
-104.16.16.119                zh.hentai-cosplays.com
-104.16.16.119                ja.hentai-cosplays.com
-104.16.16.119                ko.hentai-cosplays.com
-104.16.16.119                static.hentai-cosplays.com
-104.16.16.119                static1.hentai-cosplays.com
-104.16.16.119                static2.hentai-cosplays.com
-104.16.16.119                static3.hentai-cosplays.com
-104.16.16.119                static4.hentai-cosplays.com
-104.16.16.119                static5.hentai-cosplays.com
-104.16.16.119                static6.hentai-cosplays.com
-104.16.16.119                static7.hentai-cosplays.com
-104.16.16.119                static8.hentai-cosplays.com
-104.16.16.119                static9.hentai-cosplays.com
-104.16.16.119                static10.hentai-cosplays.com
-104.16.16.119                static11.hentai-cosplays.com
-104.16.16.119                static12.hentai-cosplays.com
-104.16.16.119                static13.hentai-cosplays.com
-104.16.16.119                static14.hentai-cosplays.com
-104.21.235.137              video06.videos-upload.com
-# hentai-cosplays End
 
 # avgle Start
 172.67.180.203          avgle.com
