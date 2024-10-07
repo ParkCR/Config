@@ -1,14 +1,15 @@
 {
-  "timeStamp": 1725943486377,
-  "version": "1.59.0",
+  "timeStamp": 1728300590451,
+  "version": "1.60.0",
   "userSettings": {
     "advancedUserEnabled": true,
     "alwaysDetachLogger": false,
     "contextMenuEnabled": false,
-    "externalLists": "https://adrules.top/adblock.txt\nhttps://anti-ad.net/easylist.txt\nhttps://easylist-downloads.adblockplus.org/easylistchina.txt\nhttps://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/AdvertisingLite/AdvertisingLite.txt\nhttps://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/BlockHttpDNS/BlockHttpDNS.txt\nhttps://filters.adtidy.org/extension/ublock/filters/220.txt\nhttps://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Popup.txt\nhttps://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Watermark.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/mv.txt\nhttps://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt\nhttps://ublockorigin.github.io/uAssets/filters/resource-abuse.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
+    "externalLists": "https://adrules.top/adblock.txt\nhttps://anti-ad.net/easylist.txt\nhttps://easylist-downloads.adblockplus.org/antiadblockfilters.txt\nhttps://easylist-downloads.adblockplus.org/easylistchina.txt\nhttps://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/AdvertisingLite/AdvertisingLite.txt\nhttps://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/BlockHttpDNS/BlockHttpDNS.txt\nhttps://filters.adtidy.org/extension/ublock/filters/220.txt\nhttps://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Popup.txt\nhttps://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Watermark.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/minority-mv.txt\nhttps://gcore.jsdelivr.net/gh/xinggsf/Adblock-Plus-Rule/mv.txt\nhttps://raw.githubusercontent.com/cjx82630/cjxlist/master/cjxlist.txt\nhttps://ublockorigin.github.io/uAssets/filters/resource-abuse.txt\nhttps://www.i-dont-care-about-cookies.eu/abp/",
     "importedLists": [
       "https://adrules.top/adblock.txt",
       "https://anti-ad.net/easylist.txt",
+      "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
       "https://easylist-downloads.adblockplus.org/easylistchina.txt",
       "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/AdvertisingLite/AdvertisingLite.txt",
       "https://fastly.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/AdGuard/BlockHttpDNS/BlockHttpDNS.txt",
@@ -21,7 +22,7 @@
       "https://ublockorigin.github.io/uAssets/filters/resource-abuse.txt",
       "https://www.i-dont-care-about-cookies.eu/abp/"
     ],
-    "popupPanelSections": 63,
+    "popupPanelSections": 15,
     "tooltipsDisabled": true
   },
   "selectedFilterLists": [
@@ -46,6 +47,7 @@
     "KOR-1",
     "https://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Popup.txt",
     "https://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Watermark.txt",
+    "https://easylist-downloads.adblockplus.org/antiadblockfilters.txt",
     "https://adrules.top/adblock.txt",
     "https://anti-ad.net/easylist.txt",
     "https://filters.adtidy.org/extension/ublock/filters/220.txt",
@@ -70,12 +72,12 @@
     "moz-extension-scheme",
     "nstool.netease.com",
     "opera-scheme",
+    "similarweb.com",
     "vivaldi-scheme",
-    "www.ppxia.live",
     "wyciwyg-scheme"
   ],
   "dynamicFilteringString": "behind-the-scene * * noop\nbehind-the-scene * inline-script noop\nbehind-the-scene * 1p-script noop\nbehind-the-scene * 3p-script noop\nbehind-the-scene * 3p-frame noop\nbehind-the-scene * image noop\nbehind-the-scene * 3p noop",
   "urlFilteringString": "",
   "hostnameSwitchesString": "no-large-media: behind-the-scene false\nno-strict-blocking: nstool.netease.com true",
-  "userFilters": "! 2023-01-30 https://97mm.cc\n||97mm.cc/A12.gif$image\n||97mm.cc/A11.gif$image\n"
+  "userFilters": "! 2023-01-30 https://97mm.cc\n||97mm.cc/A12.gif$image\n||97mm.cc/A11.gif$image\n\n! 2024年10月7日 https://bi-girl.net\nbi-girl.net##.qoevmrjrgswfwzvcxrriwdmrnzlkcumwvuvyujsxvretjhemznuthohsz.svdlzdvnxlcwdeqxwunvcdrbgzsswfrngtwvtndnkdbstaznjdzhohsz\nbi-girl.net##.mtjytmlroujpqxjjvjlnenyufikyzgonjvtdyrbkchjxckvtczldcaq.zfgcytkbvzhdvvucxfbmfudvkzqszrefetdvavvhwldzhjvctrtrtldcaq\nbi-girl.net##.eejbrjfrgirvvvqzuvwlmwlrchtyxmdgtshwbefvvixdeiodxvxja.umwtulyqjjrvwshlunwhdxjkzmlcdetfqzrenzftrhefvarzllttxvxja\nbi-girl.net##.tgwtvnadjimwbxvzauzqnexzlzkurvtnzzgfhkfzeedwuhldzisghk.bpouxmzeubnnylrzqmnnvtnxwlvlddlyynyblrzjncweqnhjndisghk\nbi-girl.net##div[class*=\"popup-ad\"]\nbi-girl.net##div[id*=\"banner-ad\"]\nbi-girl.net##div[class*=\"*\"]"
 }
