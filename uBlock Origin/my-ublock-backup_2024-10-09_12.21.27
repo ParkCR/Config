@@ -1,5 +1,5 @@
 {
-  "timeStamp": 1728362716355,
+  "timeStamp": 1728447687046,
   "version": "1.60.0",
   "userSettings": {
     "advancedUserEnabled": true,
@@ -35,8 +35,8 @@
     "ublock-unbreak",
     "easyprivacy",
     "urlhaus-1",
-    "fanboy-cookiemonster",
-    "ublock-cookies-easylist",
+    "adguard-cookies",
+    "ublock-cookies-adguard",
     "easylist-chat",
     "easylist-newsletters",
     "easylist-notifications",
@@ -44,14 +44,11 @@
     "ublock-annoyances",
     "CHN-0",
     "JPN-1",
-    "KOR-1",
     "https://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Popup.txt",
     "https://gcore.jsdelivr.net/gh/runningcheese/RunningCheese-Firefox/Restore/Adblock_Watermark.txt",
     "https://filters.adtidy.org/extension/ublock/filters/2.txt",
     "https://anti-ad.net/easylist.txt",
     "https://filters.adtidy.org/extension/ublock/filters/220.txt",
-    "https://easylist-downloads.adblockplus.org/easylistchina.txt",
-    "https://www.i-dont-care-about-cookies.eu/abp/",
     "https://ublockorigin.github.io/uAssets/filters/resource-abuse.txt"
   ],
   "hiddenSettings": {
