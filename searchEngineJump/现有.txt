@@ -104,7 +104,8 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=nyc1.sx.ggtyler.dev",
                 "name": "nyc1",
                 "url": "https://nyc1.sx.ggtyler.dev/search?q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=nogoo.me",
@@ -117,7 +118,8 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
                 "name": "oakleycord",
                 "url": "https://searx.oakleycord.dev/search?q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "data:image/ico;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAsAAAAUwAAAF8AAABfAAAAXwAAAF8AAABfAAAAXwAAAF8AAABfAAAAXwAAADjBwcEAwcHBAMHBwQDBwcEAAAAAUbq6uurExMT/xMTE/8TExP/ExMT/xMTE/8TExP/ExMT/xMTE/8TExP9ubm6QAAAALcTExADExMQAxMTEAAAAAFrHx8f/x8fH/8fHx/+7u8j/AADS/wAA0v+wsMj/x8fH/8fHx//Hx8f/vr6+7h4eHmQAAAAQx8fHAMfHxwAAAABXy8vL/8vLy//Ly8v/v7/M/wAA2/8AANv/s7PN/8vLy//Ly8v/y8vL/8vLy/+kpKS6AAAAM8vLywDLy8sAAAAAU9DQ0P/Q0ND/0NDQ/8TE0f8AAOX/AADl/7i40v/Q0ND/0NDQ/9DQ0P/Q0ND/0NDQ/2VlZXsAAAAk0NDQAAAAAE/U1NT/1NTU/9TU1P/IyNb/AADw/wAA8P+7u9f/1NTU/9TU1P/U1NT/1NTU/9TU1P/JycnkDw8PUwAAAAcAAABL2dnZ/9nZ2f/Z2dn/np7i/wAA+f8AAPn/goLm/9nZ2f/Z2dn/2dnZ/9nZ2f/Z2dn/2dnZ/6ioqKYAAAAqAAAASOLi4v/i4uL/4uLi/0hI9v8AAP//BQX+/yAg+//f3+L/4uLi/+Li4v/i4uL/4uLi/+Li4v/g4OD7AAAARgAAAETx8fH/8fHx/9jZ8v8LD///HiL+/3h6+P8IDP//lJX3//Hx8f/x8fH/8fHx//Hx8f/x8fH/7+/v+wAAAEIAAABA9vb2//b29v+Ah/v/Ex///3N6+//Z2vf/FiL//ys2/v/r7Pb/9vb2//b29v/29vb/9vb2/8jIyKMAAAAkAAAAPPn5+f/09Pn/NEf+/yA0///Gy/r/+fn5/1hn/f8gNP//jpj8//n5+f/5+fn/+fn5//Dw8OMXFxdBAAAABgAAADj7+/v/tb/8/y5K//9GX///+/v7//v7+/+zvfz/Lkr//zhS///l6Pv/+/v7//v7+/+Tk5NnAAAAGfv7+wAAAAA1/f39/3OM/v85Xf//mqz+//39/f/9/f3/9vf9/0do//85Xf//fpX+//39/f/c3NysAAAAH/39/QD9/f0AAAAAMv7+/v/+/v7//v7+//7+/v/+/v7//v7+//7+/v+VrP//QWn//0Fp///T3PrtPj4+PgAAAAn+/v4A/v7+AAAAACn39/fi////////////////////////////////////////////////tbW1cgAAABf///8A////AP///wAAAAAVAAAAKAAAAC4AAAAuAAAALgAAAC4AAAAuAAAALgAAAC4AAAAuAAAALgAAABv///8A////AP///wD///8AAA8AAAAHAAAAAwAAAAMAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAADAAAABwAAAA8AAA==",
@@ -131,9 +133,21 @@
                 "blank": "_blank"
             },
             {
+                "favicon": "https://www.google.com/s2/favicons?domain=so.ntnas.top",
+                "name": "google",
+                "url": "https://so.ntnas.top/search?q=%s",
+                "blank": "_blank"
+            },
+            {
                 "favicon": "https://www.google.com/s2/favicons?domain=presearch.com",
                 "name": "Presearch",
                 "url": "https://presearch.com/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=startgoogle.startpagina.nl",
+                "name": "startgoogle",
+                "url": "https://startgoogle.startpagina.nl/?ts=ts3&origin=homepage&query=%s",
                 "blank": "_blank"
             },
             {
@@ -180,7 +194,7 @@
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=4g.ggtyler.dev",
                 "name": "4gget",
-                "url": "https://4g.ggtyler.dev/web?s=%s",
+                "url": "https://4get.ch/web?s=%s",
                 "blank": "_blank"
             },
             {
@@ -241,6 +255,18 @@
                 "name": "Bing",
                 "url": "https://global.bing.com/?setmkt=en-us&setlang=zh-Hans&q=%s",
                 "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=gg.lty.wiki",
+                "name": "gg.lty.wiki",
+                "url": "https://gg.lty.wiki/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=google.nite07.org",
+                "name": "google.nite07",
+                "url": "https://google.nite07.org/search?q=%s",
+                "blank": "_blank"
             }
         ],
         "AI": [
@@ -260,6 +286,12 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=datong.info",
                 "name": "大同搜索",
                 "url": "https://datong.info/ui/search.html?search_lang=en&target_lang=zh&q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.juue.cn",
+                "name": "AI聚合",
+                "url": "https://www.juue.cn/s?type=ai&site=metaso&key=%s",
                 "blank": "_blank"
             },
             {
