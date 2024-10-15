@@ -1,34 +1,34 @@
 #!desc=最后更新时间 2024-10-15 
 
 # OC渲染 Start
-127.0.0.1 chinanet.io # #
-127.0.0.1 live.refractivesoftware.com # #
-127.0.0.1 live1.refractivesoftware.com # #
-127.0.0.1 live2.refractivesoftware.com # #
-127.0.0.1 live3.refractivesoftware.com # #
-127.0.0.1 live4.refractivesoftware.com # #
-127.0.0.1 live5.refractivesoftware.com # #
-127.0.0.1 live6.refractivesoftware.com # #
-127.0.0.1 live.octanerender.com # #
-127.0.0.1 live.octanerender.com/live/v1 # #
-127.0.0.1 live.octanerender.com/live/v2 # #
-127.0.0.1 live/v1/live.octanerender.com # #
-127.0.0.1 live/v2/live.octanerender.com # #
-127.0.0.1 live1.octanerender.com # #
-127.0.0.1 live2.octanerender.com # #
-127.0.0.1 live3.octanerender.com # #
-127.0.0.1 live4.octanerender.com # #
-127.0.0.1 live5.octanerender.com # #
-127.0.0.1 live6.octanerender.com # #
-127.0.0.1 account.otoy.com # #
-127.0.0.1 local.otoylocal.com # #
-127.0.0.1 orc.otoy.com # #
-127.0.0.1 54.243.210.230 # #
-127.0.0.1 169.54.33.187 # #
-127.0.0.1 58.20.196.160 # #
-127.0.0.1 169.54.129.22 # #
-127.0.0.1 account.otoy.com/sign_up # #
-127.0.0.1 bridge.octanerender.com # #
+127.0.0.1          chinanet.io # #
+127.0.0.1          live.refractivesoftware.com # #
+127.0.0.1          live1.refractivesoftware.com # #
+127.0.0.1          live2.refractivesoftware.com # #
+127.0.0.1          live3.refractivesoftware.com # #
+127.0.0.1          live4.refractivesoftware.com # #
+127.0.0.1          live5.refractivesoftware.com # #
+127.0.0.1          live6.refractivesoftware.com # #
+127.0.0.1          live.octanerender.com # #
+127.0.0.1          live.octanerender.com/live/v1 # #
+127.0.0.1          live.octanerender.com/live/v2 # #
+127.0.0.1          live/v1/live.octanerender.com # #
+127.0.0.1          live/v2/live.octanerender.com # #
+127.0.0.1          live1.octanerender.com # #
+127.0.0.1          live2.octanerender.com # #
+127.0.0.1          live3.octanerender.com # #
+127.0.0.1          live4.octanerender.com # #
+127.0.0.1          live5.octanerender.com # #
+127.0.0.1          live6.octanerender.com # #
+127.0.0.1          account.otoy.com # #
+127.0.0.1          local.otoylocal.com # #
+127.0.0.1          orc.otoy.com # #
+127.0.0.1          54.243.210.230 # #
+127.0.0.1          169.54.33.187 # #
+127.0.0.1          58.20.196.160 # #
+127.0.0.1          169.54.129.22 # #
+127.0.0.1          account.otoy.com/sign_up # #
+127.0.0.1          bridge.octanerender.com # #
 # OC渲染 End
 
 # r18.clickme Start
@@ -39,8 +39,8 @@
 # r18.clickme End
 
 # pornhub Start
-66.254.114.41	pornhub.com
-162.159.250.11           xxxsave.net
+66.254.114.41           pornhub.com
+162.159.250.11          xxxsave.net
 162.159.250.11          cdn1.xxxsave.net
 162.159.250.11          cdn2.xxxsave.net
 162.159.250.11          cdn3.xxxsave.net
@@ -58,139 +58,139 @@
 # pornhub End
 
 # Nsfw Start
-162.159.250.11           www.javbus.com
-172.67.80.44              www.javbus.com
-104.25.112.111	www.javbus.com
-104.21.21.4 	www.atozproxy.com
-199.96.61.1	www.proxysite.com
-104.21.234.81            www.genmirror.com
-104.21.27.10	www.proxy-youtube.com
-104.21.234.80	www.genmirror.com
-38.63.52.222	www.lianjiajr.net
-151.101.1.140	www.reddit.com
-23.199.47.149            v16m.tiktokcdn.com
-172.67.195.106	tikviewer.com
-104.21.49.230            javdb.com
-172.67.195.92            javdb.com
-104.21.55.147            javdb40.com
-162.159.250.11           missav.com
-162.159.250.11           missav.live
-162.159.250.11           missav789.com
+162.159.250.11          www.javbus.com
+172.67.80.44            www.javbus.com
+104.25.112.111          www.javbus.com
+104.21.21.4             www.atozproxy.com
+199.96.61.1             www.proxysite.com
+104.21.234.81           www.genmirror.com
+104.21.27.10            www.proxy-youtube.com
+104.21.234.80           www.genmirror.com
+38.63.52.222            www.lianjiajr.net
+151.101.1.140           www.reddit.com
+23.199.47.149           v16m.tiktokcdn.com
+172.67.195.106          tikviewer.com
+104.21.49.230           javdb.com
+172.67.195.92           javdb.com
+104.21.55.147           javdb40.com
+162.159.250.11          missav.com
+162.159.250.11          missav.live
+162.159.250.11          missav789.com
 # 172.66.41.44              missav.com
-162.159.250.11           myav.com
-162.159.250.11           njav.tv
-162.159.250.11         www.sotwe.com
+162.159.250.11          myav.com
+162.159.250.11          njav.tv
+162.159.250.11          www.sotwe.com
 # 172.67.169.216          www.sotwe.com
-104.21.57.195            www.metarthunter.com
-209.50.58.179            www.sex.com
+104.21.57.195           www.metarthunter.com
+209.50.58.179           www.sex.com
 89.187.162.241          cdn.sex.com
-172.67.146.10            www.sehuatang.net
-3.223.23.129              javfilms.com
+172.67.146.10           www.sehuatang.net
+3.223.23.129            javfilms.com
 104.19.128.100          theporndude.com
-172.64.134.22            thothub.to
-172.64.129.20            fyptt.to
+172.64.134.22           thothub.to
+172.64.129.20           fyptt.to
 184.154.69.246          namethatporn.com
-174.127.195.202        sexinsex.net
+174.127.195.202         sexinsex.net
 172.247.21.147          www.taohuazu.com
 193.233.203.21          btsow.mom
 172.67.212.251          freejavbt.com
-104.26.2.22                solji.kim
+104.26.2.22             solji.kim
 104.21.233.153          nsfw.xxx
-198.98.54.92              yande.re
-162.159.250.11           xslist.org
-104.21.77.28              xslist.org
+198.98.54.92            yande.re
+162.159.250.11          xslist.org
+104.21.77.28            xslist.org
 172.67.203.226          m1.xslist.org
-104.18.22.206            civitai.com
-104.18.22.206            image.civitai.com
+104.18.22.206           civitai.com
+104.18.22.206           image.civitai.com
 172.67.175.133          16k.club
 172.67.175.133          cn.16k.club
 172.67.175.133          img.16k.club
-172.67.134.57            so.techlife.app
+172.67.134.57           so.techlife.app
 59.106.195.179          sougouwiki.com
-104.26.15.129            ytapi.download
-104.26.15.129            cdn03.ytapi.download
-188.114.96.3              souka.xyz
-104.21.44.118            projectjav.com
-104.21.235.64            www.141jav.com
-198.251.89.38            sukebei.nyaa.si
-162.159.250.11           sukebeisi.sitescrack.host
-104.21.234.45            paipancon.com
+104.26.15.129           ytapi.download
+104.26.15.129           cdn03.ytapi.download
+188.114.96.3            souka.xyz
+104.21.44.118           projectjav.com
+104.21.235.64           www.141jav.com
+198.251.89.38           sukebei.nyaa.si
+162.159.250.11          sukebeisi.sitescrack.host
+104.21.234.45           paipancon.com
 172.67.180.203          avgle.com
-172.67.68.107            kisscos.net
-172.67.206.15            www.javlibrary.com
-162.159.250.11           javlib.com
-162.159.250.11           ijavtorrent.com
-162.159.250.11           images.ijavtorrent.com
-104.26.7.125              thisav.com
-104.26.6.251              njavtv.com
-162.159.250.11             nanojav.com
-162.159.250.11             m.nanojav.com
-172.67.130.46            xiutaku.com
-104.23.130.4              jable.tv
-104.23.130.4              assets-cdn.jable.tv
-104.23.130.4              assets.jable.tv
-104.23.130.4              assetscdn.jable.tv
-104.21.234.45            op1.paipancon.com
-104.21.234.45            sv3.paipancon.com
-104.21.234.45            sv2.paipancon.com
-162.159.250.11           fl.paipancon.com
-104.21.234.45            paipancon.com
-188.166.248.250        hotgirl.asia
-162.159.250.11           mogura.my.id  
-146.75.92.158            video.twimg.com
+172.67.68.107           kisscos.net
+172.67.206.15           www.javlibrary.com
+162.159.250.11          javlib.com
+162.159.250.11          ijavtorrent.com
+162.159.250.11          images.ijavtorrent.com
+104.26.7.125            thisav.com
+104.26.6.251            njavtv.com
+162.159.250.11          nanojav.com
+162.159.250.11          m.nanojav.com
+172.67.130.46           xiutaku.com
+104.23.130.4            jable.tv
+104.23.130.4            assets-cdn.jable.tv
+104.23.130.4            assets.jable.tv
+104.23.130.4            assetscdn.jable.tv
+104.21.234.45           op1.paipancon.com
+104.21.234.45           sv3.paipancon.com
+104.21.234.45           sv2.paipancon.com
+162.159.250.11          fl.paipancon.com
+104.21.234.45           paipancon.com
+188.166.248.250         hotgirl.asia
+162.159.250.11          mogura.my.id  
+146.75.92.158           video.twimg.com
 # 93.184.215.217          video.twimg.com
 # 146.75.80.159            pbs.twimg.com
-146.75.28.159            pbs.twimg.com
-77.88.55.77                yandex.com
-142.54.163.90            photo.camcam.cc
-151.101.129.140        v.redd.it
+146.75.28.159           pbs.twimg.com
+77.88.55.77             yandex.com
+142.54.163.90           photo.camcam.cc
+151.101.129.140         v.redd.it
 149.154.164.13          telegra.ph
 91.195.240.117          javsubs91.com
-172.233.137.238          avtop10.com
-172.67.68.39              sexbjcam.com
-104.19.136.100           spankbang.com
-104.21.14.198            u3c3.com
-104.21.48.132            www.micmicidol.com
-34.117.241.205           sexygirl.cc
-45.79.102.229             youravhost.net
-162.159.250.11             ios.pipigou889.top
-162.159.250.11             jjgirls.com
-94.75.220.2                 www.eporner.com
-51.79.229.79               static-sg-cdn.eporner.com
-162.159.250.11              chiba-f.net    # AV女优人物搜索引擎
-18.238.80.58                livedoor.blogimg.jp    # 日系杂志的图床
-18.238.80.58                resize.blogsys.jp    # 日系杂志的图床
+172.233.137.238         avtop10.com
+172.67.68.39            sexbjcam.com
+104.19.136.100          spankbang.com
+104.21.14.198           u3c3.com
+104.21.48.132           www.micmicidol.com
+34.117.241.205          sexygirl.cc
+45.79.102.229           youravhost.net
+162.159.250.11          ios.pipigou889.top
+162.159.250.11          jjgirls.com
+94.75.220.2             www.eporner.com
+51.79.229.79            static-sg-cdn.eporner.com
+162.159.250.11          chiba-f.net    #-> AV女优人物搜索引擎
+18.238.80.58            livedoor.blogimg.jp    #-> 日系杂志的图床
+18.238.80.58            resize.blogsys.jp    #-> 日系杂志的图床
 
 # 104.21.235.180          buondua.com
 # Nsfw End
 
 #Supjav Start
-162.159.250.11             supjav.com
-162.159.250.11             img.supjav.com
-162.159.250.11             lk1.supremejav.com
+162.159.250.11          supjav.com
+162.159.250.11          img.supjav.com
+162.159.250.11          lk1.supremejav.com
 #TV线路 fst线路 st线路 ds线路 sw线路 vh线路 TV线路
-162.159.250.11             emturbovid.com
-162.159.250.11             fc2stream.tv
-162.159.250.11             streamtape.com
-162.159.250.11             doods.pro
-162.159.250.11             streamwish.to
-162.159.250.11             streamwish.com
-162.159.250.11             vembed.net
-162.159.250.11             vidhidepro.com
-162.159.250.11             turboviplay.com
+162.159.250.11          emturbovid.com
+162.159.250.11          fc2stream.tv
+162.159.250.11          streamtape.com
+162.159.250.11          doods.pro
+162.159.250.11          streamwish.to
+162.159.250.11          streamwish.com
+162.159.250.11          vembed.net
+162.159.250.11          vidhidepro.com
+162.159.250.11          turboviplay.com
 # Supjav End
 
 #avple Start
-172.67.71.70	assert.avple.tv
-172.67.71.70	asserts.avple.tv
-172.67.71.70	www.avple.tv
-172.67.71.70	en.avple.tv
-172.67.71.70	avple.tv
+172.67.71.70            assert.avple.tv
+172.67.71.70            asserts.avple.tv
+172.67.71.70            www.avple.tv
+172.67.71.70            en.avple.tv
+172.67.71.70            avple.tv
 # avple End
 
 # avgle Start
 172.67.180.203          avgle.com
-45.133.44.10              static-clst.avgle.com
+45.133.44.10            static-clst.avgle.com
 # avgle End
 
 # cloudflare Start
@@ -220,7 +220,7 @@
 162.159.250.11             legs.a-hadaka.jp
 162.159.250.11             a-hadaka.jp
 162.159.250.11             onejav.com
-162.159.250.11             3600000.xyz
+# 162.159.250.11             3600000.xyz   #-> 墙
 # 162.159.250.11             en.jrants.com
 # 162.159.250.11             jrants.com
 162.159.250.11             javhd.today
@@ -264,8 +264,8 @@
 162.159.250.11             dubocool.com
 162.159.250.11             trendszine.com
 162.159.250.11             www.jkforum.net
-162.159.250.11             www.deepl.com    # deepl翻译
-162.159.250.11             static.deepl.com   # deepl翻译
+162.159.250.11             www.deepl.com    #-> deepl翻译
+162.159.250.11             static.deepl.com   #-> deepl翻译
 
 # cloudflare End
 
@@ -296,30 +296,30 @@
 # fix google translate Start
 142.251.188.117             translate.googleapis.com
 142.251.188.117             translate.google.com
-142.251.188.117             translate-pa.googleapis.com
+142.251.188.117             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
 # fix google translate End
 
 # 未分类 Start
 127.0.0.1                   ns.take2games.com
 127.0.0.1                   nba2k14.pc.2ksports.com
-162.240.72.31            t66y.com
-172.67.141.4              thotsbay.tv
-165.227.5.53              hide.me
-142.4.204.230            www.turbohide.org
-192.95.4.125              www.kproxy.com
-194.187.168.100         www.qwant.com
-40.89.244.232             duckduckgo.com
-216.218.239.42          www.startpage.com
-172.247.242.179        www.wandou.pro
-120.55.163.96              ai.dawnmark.cn
-18.164.174.23              huggingface.co
+162.240.72.31               t66y.com
+172.67.141.4                thotsbay.tv
+165.227.5.53                hide.me
+142.4.204.230               www.turbohide.org
+192.95.4.125                www.kproxy.com
+194.187.168.100             www.qwant.com
+40.89.244.232               duckduckgo.com
+216.218.239.42              www.startpage.com
+172.247.242.179             www.wandou.pro
+120.55.163.96               ai.dawnmark.cn
+18.164.174.23               huggingface.co
 195.201.99.166              searx.space
-107.180.1.33              zqjy.info
-51.68.155.228             thatpervert.com
-104.16.248.1               fanqiangdang.com
-54.192.18.64               www.prestige-av.com
-151.101.1.140              i.redd.it
-151.101.1.140              external-preview.redd.it
+107.180.1.33                zqjy.info
+51.68.155.228               thatpervert.com
+104.16.248.1                fanqiangdang.com
+54.192.18.64                www.prestige-av.com
+151.101.1.140               i.redd.it
+151.101.1.140               external-preview.redd.it
+182.236.92.146              oggi.jp   #-> oggi 官网
+
 # 未分类 End
-# oggi 官网
-182.236.92.146            oggi.jp
