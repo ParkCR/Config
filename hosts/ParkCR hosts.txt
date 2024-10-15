@@ -32,9 +32,10 @@
 # OC渲染 End
 
 # r18.clickme Start
-162.159.250.11cdn.clickme.net
-104.26.3.83	r18.clickme.net
-172.67.70.135	r18.clickme.net
+162.159.250.11          cdn.clickme.net
+162.159.250.11          r18.clickme.net
+# 104.26.3.83          r18.clickme.net
+# 172.67.70.135          r18.clickme.net
 # r18.clickme End
 
 # pornhub Start
