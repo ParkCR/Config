@@ -1,3 +1,5 @@
+#!desc=最后更新时间 2024-10-15 
+
 # OC渲染 Start
 127.0.0.1 chinanet.io # #
 127.0.0.1 live.refractivesoftware.com # #
@@ -151,6 +153,8 @@
 45.79.102.229             youravhost.net
 104.16.16.119              ios.pipigou889.top
 104.16.16.119              jjgirls.com
+94.75.220.2                 www.eporner.com
+51.79.229.79               static-sg-cdn.eporner.com
 
 # 两个日系杂志的图床
 18.238.80.58                livedoor.blogimg.jp
