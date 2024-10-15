@@ -1025,59 +1025,12 @@
                 "url": "https://www.toutiao.com/search/?keyword=%s",
                 "blank": "_blank"
             }
-        ],
-        "details": [
-            [
-                "网页",
-                "web",
-                true
-            ],
-            [
-                "AI搜索",
-                "AI",
-                true
-            ],
-            [
-                "翻译",
-                "translate",
-                true
-            ],
-            [
-                "下载",
-                "download",
-                true
-            ],
-            [
-                "视频",
-                "video",
-                true
-            ],
-            [
-                "图片",
-                "image",
-                true
-            ],
-            [
-                "音乐",
-                "music",
-                true
-            ],
-            [
-                "社交",
-                "sociality",
-                true
-            ],
-            [
-                "知识",
-                "knowledge",
-                true
-            ]
         ]
     },
     "rules": [
         {
             "name": "360",
-            "url": {},
+            "url": "/^https?:\\/\\/www\\.so\\.com\\/s\\?/",
             "enabled": true,
             "engineList": "web",
             "fixedTop": 50,
