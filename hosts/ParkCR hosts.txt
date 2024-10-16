@@ -294,9 +294,9 @@
 # wallhaven End
 
 # fix google translate Start
-142.251.177.84             translate.googleapis.com
-142.251.177.84             translate.google.com
-142.251.177.84             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
+64.233.160.176             translate.googleapis.com
+64.233.160.176             translate.google.com
+64.233.160.176             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
 # fix google translate End
 
 # 未分类 Start
