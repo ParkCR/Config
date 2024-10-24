@@ -160,6 +160,12 @@
 162.159.250.11          chiba-f.net    #-> AV女优人物搜索引擎
 18.238.80.58            livedoor.blogimg.jp    #-> 日系杂志的图床
 18.238.80.58            resize.blogsys.jp    #-> 日系杂志的图床
+162.159.250.11          javdoe.to
+162.159.250.11          javhd.today
+162.159.250.11          pics.javhd.today
+162.159.250.11          javhdz.today
+162.159.250.11          pics.javhdz.today
+
 
 # 104.21.235.180          buondua.com
 # Nsfw End
