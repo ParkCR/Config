@@ -165,6 +165,8 @@
 162.159.250.11          pics.javhd.today
 162.159.250.11          javhdz.today
 162.159.250.11          pics.javhdz.today
+162.159.250.11          danryoku.com
+162.159.250.11          idol.gravureprincess.date #-> 日本写真站 
 
 
 # 104.21.235.180          buondua.com
@@ -202,6 +204,7 @@
 # cloudflare Start
 162.159.250.11             buondua.com
 162.159.250.11             cdn.buondua.com
+162.159.250.11             i0.buondua.com
 162.159.250.11             limbopro.com
 162.159.250.11             urlebird.com
 162.159.250.11             ikanins.com
