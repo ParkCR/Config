@@ -160,6 +160,7 @@
 162.159.250.11          chiba-f.net    #-> AV女优人物搜索引擎
 18.238.80.58            livedoor.blogimg.jp    #-> 日系杂志的图床
 18.238.80.58            resize.blogsys.jp    #-> 日系杂志的图床
+147.92.146.242          blog.livedoor.jp #-> 日系杂志的网页
 162.159.250.11          javdoe.to
 162.159.250.11          javhd.today
 162.159.250.11          pics.javhd.today
@@ -275,6 +276,7 @@
 162.159.250.11             www.jkforum.net
 162.159.250.11             www.deepl.com    #-> deepl翻译
 162.159.250.11             static.deepl.com   #-> deepl翻译
+162.159.250.11             proxyway.com
 
 # cloudflare End
 
