@@ -82,8 +82,9 @@
 162.159.250.11          www.sotwe.com
 # 172.67.169.216          www.sotwe.com
 104.21.57.195           www.metarthunter.com
-209.50.58.179           www.sex.com
-89.187.162.241          cdn.sex.com
+# 209.50.58.179           www.sex.com
+18.194.126.46           www.sex.com
+169.150.236.98          cdn.sex.com
 172.67.146.10           www.sehuatang.net
 3.223.23.129            javfilms.com
 104.19.128.100          theporndude.com
