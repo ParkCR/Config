@@ -1,4 +1,4 @@
-#!desc=最后更新时间 2024-11-01 
+#!desc=最后更新时间 2024-11-29 
 
 # OC渲染 Start
 127.0.0.1          chinanet.io # #
@@ -32,33 +32,33 @@
 # OC渲染 End
 
 # r18.clickme Start
-162.159.250.11          cdn.clickme.net
-162.159.250.11          r18.clickme.net
+104.19.68.217          cdn.clickme.net
+104.19.68.217          r18.clickme.net
 # 104.26.3.83          r18.clickme.net
 # 172.67.70.135          r18.clickme.net
 # r18.clickme End
 
 # pornhub Start
 66.254.114.41           pornhub.com
-162.159.250.11          xxxsave.net
-162.159.250.11          cdn1.xxxsave.net
-162.159.250.11          cdn2.xxxsave.net
-162.159.250.11          cdn3.xxxsave.net
-162.159.250.11          cdn4.xxxsave.net
-162.159.250.11          cdn5.xxxsave.net
-162.159.250.11          cdn6.xxxsave.net
-162.159.250.11          cdn7.xxxsave.net
-162.159.250.11          cdn8.xxxsave.net
-162.159.250.11          cdn9.xxxsave.net
-162.159.250.11          cdn10.xxxsave.net
-162.159.250.11           saveporn.net
-162.159.250.11           file1.vidify.io
+104.19.68.217          xxxsave.net
+104.19.68.217          cdn1.xxxsave.net
+104.19.68.217          cdn2.xxxsave.net
+104.19.68.217          cdn3.xxxsave.net
+104.19.68.217          cdn4.xxxsave.net
+104.19.68.217          cdn5.xxxsave.net
+104.19.68.217          cdn6.xxxsave.net
+104.19.68.217          cdn7.xxxsave.net
+104.19.68.217          cdn8.xxxsave.net
+104.19.68.217          cdn9.xxxsave.net
+104.19.68.217          cdn10.xxxsave.net
+104.19.68.217           saveporn.net
+104.19.68.217           file1.vidify.io
 152.195.33.132          cv-h.phncdn.com
 152.195.33.132          phncdn.com
 # pornhub End
 
 # Nsfw Start
-162.159.250.11          www.javbus.com
+104.19.68.217          www.javbus.com
 172.67.80.44            www.javbus.com
 104.25.112.111          www.javbus.com
 104.21.21.4             www.atozproxy.com
@@ -73,13 +73,13 @@
 104.21.49.230           javdb.com
 172.67.195.92           javdb.com
 104.21.55.147           javdb40.com
-162.159.250.11          missav.com
-162.159.250.11          missav.live
-162.159.250.11          missav789.com
+104.19.68.217          missav.com
+104.19.68.217          missav.live
+104.19.68.217          missav789.com
 # 172.66.41.44              missav.com
-162.159.250.11          myav.com
-162.159.250.11          njav.tv
-162.159.250.11          www.sotwe.com
+104.19.68.217          myav.com
+104.19.68.217          njav.tv
+104.19.68.217          www.sotwe.com
 # 172.67.169.216          www.sotwe.com
 104.21.57.195           www.metarthunter.com
 # 209.50.58.179           www.sex.com
@@ -98,7 +98,7 @@
 104.26.2.22             solji.kim
 104.21.233.153          nsfw.xxx
 198.98.54.92            yande.re
-162.159.250.11          xslist.org
+104.19.68.217          xslist.org
 104.21.77.28            xslist.org
 172.67.203.226          m1.xslist.org
 104.18.22.206           civitai.com
@@ -114,18 +114,18 @@
 104.21.44.118           projectjav.com
 104.21.235.64           www.141jav.com
 198.251.89.38           sukebei.nyaa.si
-162.159.250.11          sukebeisi.sitescrack.host
+104.19.68.217          sukebeisi.sitescrack.host
 104.21.234.45           paipancon.com
 172.67.180.203          avgle.com
 172.67.68.107           kisscos.net
 172.67.206.15           www.javlibrary.com
-162.159.250.11          javlib.com
-162.159.250.11          ijavtorrent.com
-162.159.250.11          images.ijavtorrent.com
+104.19.68.217          javlib.com
+104.19.68.217          ijavtorrent.com
+104.19.68.217          images.ijavtorrent.com
 104.26.7.125            thisav.com
 104.26.6.251            njavtv.com
-162.159.250.11          nanojav.com
-162.159.250.11          m.nanojav.com
+104.19.68.217          nanojav.com
+104.19.68.217          m.nanojav.com
 172.67.130.46           xiutaku.com
 104.23.130.4            jable.tv
 104.23.130.4            assets-cdn.jable.tv
@@ -134,10 +134,10 @@
 104.21.234.45           op1.paipancon.com
 104.21.234.45           sv3.paipancon.com
 104.21.234.45           sv2.paipancon.com
-162.159.250.11          fl.paipancon.com
+104.19.68.217          fl.paipancon.com
 104.21.234.45           paipancon.com
 188.166.248.250         hotgirl.asia
-162.159.250.11          mogura.my.id  
+104.19.68.217          mogura.my.id  
 146.75.92.158           video.twimg.com
 # 93.184.215.217          video.twimg.com
 # 146.75.80.159            pbs.twimg.com
@@ -154,40 +154,40 @@
 104.21.48.132           www.micmicidol.com
 34.117.241.205          sexygirl.cc
 45.79.102.229           youravhost.net
-162.159.250.11          ios.pipigou889.top
-162.159.250.11          jjgirls.com
+104.19.68.217          ios.pipigou889.top
+104.19.68.217          jjgirls.com
 94.75.220.2             www.eporner.com
 51.79.229.79            static-sg-cdn.eporner.com
-162.159.250.11          chiba-f.net    #-> AV女优人物搜索引擎
+104.19.68.217          chiba-f.net    #-> AV女优人物搜索引擎
 18.238.80.58            livedoor.blogimg.jp    #-> 日系杂志的图床
 18.238.80.58            resize.blogsys.jp    #-> 日系杂志的图床
 147.92.146.242          blog.livedoor.jp #-> 日系杂志的网页
-162.159.250.11          javdoe.to
-162.159.250.11          javhd.today
-162.159.250.11          pics.javhd.today
-162.159.250.11          javhdz.today
-162.159.250.11          pics.javhdz.today
-162.159.250.11          danryoku.com
-162.159.250.11          idol.gravureprincess.date #-> 日本写真站 
+104.19.68.217          javdoe.to
+104.19.68.217          javhd.today
+104.19.68.217          pics.javhd.today
+104.19.68.217          javhdz.today
+104.19.68.217          pics.javhdz.today
+104.19.68.217          danryoku.com
+104.19.68.217          idol.gravureprincess.date #-> 日本写真站 
 
 
 # 104.21.235.180          buondua.com
 # Nsfw End
 
 #Supjav Start
-162.159.250.11          supjav.com
-162.159.250.11          img.supjav.com
-162.159.250.11          lk1.supremejav.com
+104.19.68.217          supjav.com
+104.19.68.217          img.supjav.com
+104.19.68.217          lk1.supremejav.com
 #TV线路 fst线路 st线路 ds线路 sw线路 vh线路 TV线路
-162.159.250.11          emturbovid.com
-162.159.250.11          fc2stream.tv
-162.159.250.11          streamtape.com
-162.159.250.11          doods.pro
-162.159.250.11          streamwish.to
-162.159.250.11          streamwish.com
-162.159.250.11          vembed.net
-162.159.250.11          vidhidepro.com
-162.159.250.11          turboviplay.com
+104.19.68.217          emturbovid.com
+104.19.68.217          fc2stream.tv
+104.19.68.217          streamtape.com
+104.19.68.217          doods.pro
+104.19.68.217          streamwish.to
+104.19.68.217          streamwish.com
+104.19.68.217          vembed.net
+104.19.68.217          vidhidepro.com
+104.19.68.217          turboviplay.com
 # Supjav End
 
 #avple Start
@@ -204,97 +204,97 @@
 # avgle End
 
 # cloudflare Start
-162.159.250.11             buondua.com
-162.159.250.11             cdn.buondua.com
-162.159.250.11             i0.buondua.com
-162.159.250.11             limbopro.com
-162.159.250.11             urlebird.com
-162.159.250.11             ikanins.com
-162.159.250.11             www.ikanins.com
-162.159.250.11             img.erogazou.gallery
-162.159.250.11             img2.erogazou.gallery
-162.159.250.11             erogazou.gallery
-162.159.250.11             bi-girl.net
-162.159.250.11             erogazooo.club
-162.159.250.11             erogirl.net
-162.159.250.11             goddess247.com
-162.159.250.11             hitxhot.com
-162.159.250.11             hitxhot.org
-162.159.250.11             www.hitxhot.org
-162.159.250.11             ososedki.com
-162.159.250.11             www.ilovexs.com
-162.159.250.11             pics.avjiasu.com
-162.159.250.11             avitter.net
-162.159.250.11             gimy.ai
-162.159.250.11             javdb522.com
-162.159.250.11             c0.jdbstatic.com
-162.159.250.11             legs.a-hadaka.jp
-162.159.250.11             a-hadaka.jp
-162.159.250.11             onejav.com
-# 162.159.250.11             3600000.xyz   #-> 墙
-# 162.159.250.11             en.jrants.com
-# 162.159.250.11             jrants.com
-162.159.250.11             javhd.today
-162.159.250.11             javday.tv
-162.159.250.11             hpjav.tv
-162.159.250.11             taiav.com
-162.159.250.11             happy.5ge.net
-162.159.250.11             static.5ge.net
-162.159.250.11             androsound.ru
-162.159.250.11             www.abskoop.com
-162.159.250.11             made.porn
-162.159.250.11             mrcong.com
-162.159.250.11             lux.mrcong.com
-162.159.250.11             javtiful.com
-162.159.250.11             www.24fa.com
-162.159.250.11             netflav.com
-162.159.250.11             netflav5.com
-162.159.250.11             cableav.tv
-162.159.250.11             www.croxy.red
-#162.159.250.11             www.depvailon.com
-162.159.250.11             www.ecosia.org
-162.159.250.11             prompthero.com
-162.159.250.11             kissjav.com
-162.159.250.11             javgg.net
-162.159.250.11             images.javgg.net
-162.159.250.11             www.croxyproxy.com
-162.159.250.11             reprint-kh.com
-162.159.250.11             javtree.com
-162.159.250.11             7mmtv.sx
-162.159.250.11             javmovs.com
-162.159.250.11             www.perplexity.ai
-162.159.250.11             javmulu.net
-162.159.250.11             www.winkav.com
-162.159.250.11             sexkbj.com
-162.159.250.11             nudebird.biz
-162.159.250.11             cosplaytele.com
-162.159.250.11             x6o.com
-162.159.250.11             aoyo.ai
-162.159.250.11             thinkany.ai
-162.159.250.11             www.boobpedia.com
-162.159.250.11             dubocool.com
-162.159.250.11             trendszine.com
-162.159.250.11             www.jkforum.net
-162.159.250.11             www.deepl.com    #-> deepl翻译
-162.159.250.11             static.deepl.com   #-> deepl翻译
-162.159.250.11             proxyway.com
+104.19.68.217             buondua.com
+104.19.68.217             cdn.buondua.com
+104.19.68.217             i0.buondua.com
+104.19.68.217             limbopro.com
+104.19.68.217             urlebird.com
+104.19.68.217             ikanins.com
+104.19.68.217             www.ikanins.com
+104.19.68.217             img.erogazou.gallery
+104.19.68.217             img2.erogazou.gallery
+104.19.68.217             erogazou.gallery
+104.19.68.217             bi-girl.net
+104.19.68.217             erogazooo.club
+104.19.68.217             erogirl.net
+104.19.68.217             goddess247.com
+104.19.68.217             hitxhot.com
+104.19.68.217             hitxhot.org
+104.19.68.217             www.hitxhot.org
+104.19.68.217             ososedki.com
+104.19.68.217             www.ilovexs.com
+104.19.68.217             pics.avjiasu.com
+104.19.68.217             avitter.net
+104.19.68.217             gimy.ai
+104.19.68.217             javdb522.com
+104.19.68.217             c0.jdbstatic.com
+104.19.68.217             legs.a-hadaka.jp
+104.19.68.217             a-hadaka.jp
+104.19.68.217             onejav.com
+# 104.19.68.217             3600000.xyz   #-> 墙
+# 104.19.68.217             en.jrants.com
+# 104.19.68.217             jrants.com
+104.19.68.217             javhd.today
+104.19.68.217             javday.tv
+104.19.68.217             hpjav.tv
+104.19.68.217             taiav.com
+104.19.68.217             happy.5ge.net
+104.19.68.217             static.5ge.net
+104.19.68.217             androsound.ru
+104.19.68.217             www.abskoop.com
+104.19.68.217             made.porn
+104.19.68.217             mrcong.com
+104.19.68.217             lux.mrcong.com
+104.19.68.217             javtiful.com
+104.19.68.217             www.24fa.com
+104.19.68.217             netflav.com
+104.19.68.217             netflav5.com
+104.19.68.217             cableav.tv
+104.19.68.217             www.croxy.red
+#104.19.68.217             www.depvailon.com
+104.19.68.217             www.ecosia.org
+104.19.68.217             prompthero.com
+104.19.68.217             kissjav.com
+104.19.68.217             javgg.net
+104.19.68.217             images.javgg.net
+104.19.68.217             www.croxyproxy.com
+104.19.68.217             reprint-kh.com
+104.19.68.217             javtree.com
+104.19.68.217             7mmtv.sx
+104.19.68.217             javmovs.com
+104.19.68.217             www.perplexity.ai
+104.19.68.217             javmulu.net
+104.19.68.217             www.winkav.com
+104.19.68.217             sexkbj.com
+104.19.68.217             nudebird.biz
+104.19.68.217             cosplaytele.com
+104.19.68.217             x6o.com
+104.19.68.217             aoyo.ai
+104.19.68.217             thinkany.ai
+104.19.68.217             www.boobpedia.com
+104.19.68.217             dubocool.com
+104.19.68.217             trendszine.com
+104.19.68.217             www.jkforum.net
+104.19.68.217             www.deepl.com    #-> deepl翻译
+104.19.68.217             static.deepl.com   #-> deepl翻译
+104.19.68.217             proxyway.com
 
 # cloudflare End
 
 # everia Start
-162.159.250.11             everia.club
+104.19.68.217             everia.club
 # 104.21.74.36               everia.club
-162.159.250.11             takobox.top
-162.159.250.11             hitsuji.my.id
-162.159.250.11             quenbox.top
-162.159.250.11             kumabox.top
-162.159.250.11             yunabox.top
-162.159.250.11             nekobox.top
-162.159.250.11             nezumi.my.id
-162.159.250.11             imgyagi.top
-162.159.250.11             everiaeveria.b-cdn.net
-162.159.250.11             www.everiaclub.com
-162.159.250.11             files.everiaclub.com
+104.19.68.217             takobox.top
+104.19.68.217             hitsuji.my.id
+104.19.68.217             quenbox.top
+104.19.68.217             kumabox.top
+104.19.68.217             yunabox.top
+104.19.68.217             nekobox.top
+104.19.68.217             nezumi.my.id
+104.19.68.217             imgyagi.top
+104.19.68.217             everiaeveria.b-cdn.net
+104.19.68.217             www.everiaclub.com
+104.19.68.217             files.everiaclub.com
 # everia End
 
 # wallhaven Start
