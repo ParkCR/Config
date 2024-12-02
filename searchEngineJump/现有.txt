@@ -90,36 +90,55 @@
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "Ooglester",
-                "url": "https://ooglester.com/search?q=%s",
+                "name": "priv.au",
+                "url": "https://priv.au/search?q=%s",
                 "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "searx.dresden.network",
+                "url": "https://searx.dresden.network/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=nyc1.sx.ggtyler.dev",
+                "name": "search.im-in.space",
+                "url": "https://search.im-in.space/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "Inetol",
+                "url": "https://search.inetol.net/search?q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "Hbubli",
+                "url": "https://search.hbubli.cc/search?q=%s",
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
                 "name": "Blitzw",
                 "url": "https://search.blitzw.in/search?q=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=nyc1.sx.ggtyler.dev",
-                "name": "nyc1",
-                "url": "https://nyc1.sx.ggtyler.dev/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=nogoo.me",
-                "name": "nogoo",
-                "url": "https://nogoo.me/search?q=%s",
                 "blank": "_blank",
                 "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "oakleycord",
-                "url": "https://searx.oakleycord.dev/search?q=%s",
+                "name": "Ooglester",
+                "url": "https://ooglester.com/search?q=%s",
                 "blank": "_blank",
                 "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=4get.thebunny.zone",
+                "name": "4get.the",
+                "url": "https://4get.thebunny.zone/web?s=%s",
+                "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=4g.ggtyler.dev",
@@ -142,7 +161,8 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=so.ntnas.top",
                 "name": "google",
                 "url": "https://so.ntnas.top/search?q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "gbk": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=presearch.com",
@@ -179,13 +199,6 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=search.ahwx.org",
                 "name": "LibreY 1",
                 "url": "https://search.ahwx.org/search.php?q=%s&p=0&t=0",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=opnxng.com",
-                "name": "opnxng",
-                "url": "https://opnxng.com/search?q=%s",
                 "blank": "_blank",
                 "disable": "true"
             },
@@ -259,6 +272,12 @@
                 "name": "google.nite07",
                 "url": "https://google.nite07.org/search?q=%s",
                 "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=4.nboeck.de",
+                "name": "4get.nboeck",
+                "url": "https://4.nboeck.de/web?s=%s",
+                "blank": "_blank"
             }
         ],
         "AI": [
@@ -290,6 +309,12 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=isou.chat",
                 "name": "isou",
                 "url": "https://isou.chat/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=morphic.sh",
+                "name": "Morphic",
+                "url": "https://morphic.sh/search?q=%s",
                 "blank": "_blank"
             },
             {
@@ -565,6 +590,12 @@
                 "name": "动漫花园",
                 "url": "https://share.dmhy.org/topics/list?keyword=%s",
                 "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=ly.owo.si",
+                "name": "ly.owo",
+                "url": "https://ly.owo.si/search.php?q=%s&t=3&p=0",
+                "blank": "_blank"
             }
         ],
         "video": [
@@ -595,6 +626,12 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=zhuiyingmao4.com",
                 "name": "追影猫",
                 "url": "https://zhuiyingmao4.com/vodsearch/-------------.html?wd=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=v.ikanbot.com",
+                "name": "ikanbot",
+                "url": "https://v.ikanbot.com/search?q=%s",
                 "blank": "_blank"
             },
             {
@@ -687,7 +724,7 @@
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=xgequ.com",
                 "name": "新歌曲网",
-                "url": "http://xgequ.com/so/%s.html",
+                "url": "http://www.qeecc.com/so/%s.html",
                 "blank": "_blank"
             },
             {
