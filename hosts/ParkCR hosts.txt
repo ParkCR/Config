@@ -311,6 +311,15 @@
 64.233.160.176             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
 # fix google translate End
 
+# searxng搜索引擎 Start
+152.42.169.114             priv.au 
+188.165.209.227            searx.ox2.fr
+85.215.132.56              searx.dresden.network
+5.9.120.158                search.im-in.space
+148.135.82.45              search.ononoki.org
+# searxng搜索引擎 End
+
+
 # 未分类 Start
 127.0.0.1                   ns.take2games.com
 127.0.0.1                   nba2k14.pc.2ksports.com
