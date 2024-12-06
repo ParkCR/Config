@@ -169,7 +169,8 @@
 104.17.221.30          pics.javhdz.today
 104.17.221.30          danryoku.com
 104.17.221.30          idol.gravureprincess.date #-> 日本写真站 
-
+104.17.221.30          javtrailers.com
+104.17.221.30          media.javtrailers.com
 
 # 104.21.235.180          buondua.com
 # Nsfw End
