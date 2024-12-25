@@ -307,9 +307,9 @@
 # wallhaven End
 
 # fix google translate Start
-64.233.160.176             translate.googleapis.com
-64.233.160.176             translate.google.com
-64.233.160.176             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
+47.102.115.14             translate.googleapis.com
+47.102.115.14             translate.google.com
+47.102.115.14             translate-pa.googleapis.com   #-> 谷歌翻译国内重定向
 # fix google translate End
 
 # searxng搜索引擎 Start
