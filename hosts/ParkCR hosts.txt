@@ -1,4 +1,4 @@
-#!desc=最后更新时间 2024-12-25 
+#!desc=最后更新时间 2024-12-31 
 
 # OC渲染 Start
 127.0.0.1          chinanet.io # #
@@ -171,6 +171,15 @@
 172.64.90.33          idol.gravureprincess.date #-> 日本写真站 
 172.64.90.33          javtrailers.com
 172.64.90.33          media.javtrailers.com
+172.64.90.33             www.javdatabase.com
+172.64.90.33             javseen.tv
+208.74.151.16           www.cospuri.com
+172.64.90.33             jav.guru
+172.64.90.33             javpics.com
+172.64.90.33             javhd.pics
+172.64.90.33             ugj.net
+172.64.90.33            www.picnob.com
+172.64.90.33            www.jav321.com
 
 # 104.21.235.180          buondua.com
 # Nsfw End
@@ -348,5 +357,9 @@
 172.64.90.33                www.newproxylist.net          #-> 在线代理列表
 192.3.86.131                hidefrom.com                  #-> 在线代理列表
 172.64.90.33                www.proxy-site.net            #-> 在线代理列表
+192.3.86.131                wecanunblock.com
+192.3.86.131                quickbypass.com
+192.3.86.131                thebestproxy.org
+192.3.86.131                costfreezone.com
 
 # 未分类 End
