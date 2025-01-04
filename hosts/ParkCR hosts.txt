@@ -322,11 +322,12 @@
 # fix google translate End
 
 # searxng搜索引擎 Start
-152.42.169.114             priv.au 
 188.165.209.227            searx.ox2.fr
 85.215.132.56              searx.dresden.network
 5.9.120.158                search.im-in.space
 148.135.82.45              search.ononoki.org
+89.216.27.84               searx.foss.family                  #-> searxng搜索引擎
+37.228.134.25              searx.tiekoetter.com            #-> searxng搜索引擎
 # searxng搜索引擎 End
 
 
