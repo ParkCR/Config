@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文本链接转换工具</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .header {
+    margin-top: 20px; /* Add some space from the top */
+    font-size: 2em;
+    color: #333;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .text-box {
+    flex: 1;
+    position: relative;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  .controls, #exportControls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #cdnSelect, #exportFormatSelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    min-width: 150px; /* Set a minimum width for select elements */
+    max-width: 30%; /* Limit the maximum width of select elements */
+  }
+  button {
+    padding: 8px 16px;
+    margin-left: 5px; /* Add some space between elements */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1; /* Make buttons take up equal space */
+    min-width: 150px; /* Set a minimum width for buttons */
+    max-width: 30%; /* Limit the maximum width of buttons */
+  }
+  #copyButton {
+    background-color: #28a745;
+    color: white;
+  }
+  #clearButton {
+    background-color: #dc3545;
+    color: white;
+  }
+  #exportButton {
+    background-color: #007bff;
+    color: white;
+  }
+  #generateButton {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+  }
+  #exportControls {
+    gap: 10px; /* Space between export controls */
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .controls, #exportControls {
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      gap: 10px; /* Space between elements when wrapped */
+    }
+    #cdnSelect, button, #exportFormatSelect, #exportButton {
+      width: 100%; /* Make select and buttons full width on mobile */
+      margin-bottom: 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1 class="header">图片缓存1.9</h1>
+
+<div class="container">
+  <div class="text-box">
+    <h3>粘贴文本链接</h3>
+    <textarea id="inputText" placeholder="在这里粘贴你的文本..."></textarea>
+    <div class="controls">
+      <select id="cdnSelect">
+        <option value="none">请选择图片CDN加速服务</option>
+        <optgroup label="WordPress 服务">
+          <option value="i0">WordPress - i0</option>
+          <option value="i1">WordPress - i1</option>
+          <option value="i2">WordPress - i2</option>
+          <option value="i3">WordPress - i3</option>
+        </optgroup>
+        <optgroup label="CDNJSON 服务">
+          <option value="cdnjson">CDNJSON</option>
+        </optgroup>
+        <optgroup label="Daum CDN 服务">
+          <option value="t1">Daum CDN - t1</option>
+          <option value="t2">Daum CDN - t2</option>
+        </optgroup>
+      </select>
+      <button id="generateButton" onclick="generateText()">生成文本</button>
+      <button id="clearButton" onclick="clearInputText()">清除</button>
+    </div>
+  </div>
+  <div class="text-box">
+    <h3>生成的文本</h3>
+    <textarea id="outputText" readonly></textarea>
+    <div id="exportControls">
+      <button id="copyButton" onclick="copyToClipboard()">复制到剪贴板</button>
+      <select id="exportFormatSelect">
+        <option value="txt">导出为 .txt 文件</option>
+        <option value="json">导出为 .json 文件</option>
+        <option value="md">导出为 .md 文件</option>
+      </select>
+      <button id="exportButton" onclick="exportFile()">导出</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function generateText() {
+  const inputText = document.getElementById('inputText').value;
+  const cdnOption = document.getElementById('cdnSelect').value;
+  let outputText = inputText;
+
+  if (cdnOption.startsWith('i') && ['i0', 'i1', 'i2', 'i3'].includes(cdnOption)) {
+    // Regular expression to match image URLs
+    const imgUrlRegex = /https?:\/\/[^\s]+/g;
+    // Replace matched URLs with the WordPress CDN URL
+    outputText = inputText.replace(imgUrlRegex, (match) => {
+      return `https://${cdnOption}.wp.com/${match.slice(match.indexOf('/') + 2)}`;
+    });
+  } else if (cdnOption === 'cdnjson') {
+    // Regular expression to match image URLs
+    const imgUrlRegex = /https?:\/\/[^\s]+/g;
+    // Replace matched URLs with the CDNJSON URL
+    outputText = inputText.replace(imgUrlRegex, (match) => {
+      return `https://cdn.cdnjson.com/pic.html?url=${encodeURIComponent(match)}`;
+    });
+  } else if (['t1', 't2'].includes(cdnOption)) {
+    // Regular expression to match image URLs
+    const imgUrlRegex = /https?:\/\/[^\s]+/g;
+    // Replace matched URLs with the Daum CDN URL
+    outputText = inputText.replace(imgUrlRegex, (match) => {
+      return `https://${cdnOption}.daumcdn.net/thumb/R1000x0/?fname=${encodeURIComponent(match)}`;
+    });
+  }
+
+  document.getElementById('outputText').value = outputText;
+}
+
+function copyToClipboard() {
+  const outputText = document.getElementById('outputText');
+  outputText.select();
+  outputText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(outputText.value).then(() => {
+    alert('文本已复制到剪贴板！');
+  }).catch(err => {
+    console.error('未能复制文本: ', err);
+    // Fallback for older browsers that do not support navigator.clipboard
+    document.execCommand('copy');
+    alert('文本已复制到剪贴板！');
+  });
+}
+
+function clearInputText() {
+  document.getElementById('inputText').value = '';
+  document.getElementById('outputText').value = ''; // Also clear the output text area
+}
+
+function exportFile() {
+  const outputText = document.getElementById('outputText').value.trim();
+  const format = document.getElementById('exportFormatSelect').value;
+  let fileName = 'converted_output';
+  let fileContent = '';
+
+  switch (format) {
+    case 'txt':
+      fileName += '.txt';
+      fileContent = outputText;
+      break;
+    case 'json':
+      fileName += '.json';
+      // Split the output text into an array of URLs
+      const urls = outputText.split('\n').map(url => url.trim()).filter(url => url.length > 0);
+      if (urls.length === 0) {
+        alert('没有有效的URL可以导出为JSON。');
+        return;
+      }
+      fileContent = JSON.stringify(urls, null, 2);
+      break;
+    case 'md':
+      fileName += '.md';
+      // Convert each URL to Markdown link format and ensure each link is on a new line
+      const mdLinks = outputText.split('\n')
+                                .map(url => url.trim())
+                                .filter(url => url.length > 0)
+                                .map(url => `[](${url})`)
+                                .join('\n');
+      if (mdLinks.length === 0) {
+        alert('没有有效的URL可以导出为Markdown。');
+        return;
+      }
+      fileContent = mdLinks;
+      break;
+    default:
+      alert('未知的导出格式');
+      return;
+  }
+
+  const blob = new Blob([fileContent], { type: 'text/plain' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = fileName;
+  link.click();
+  URL.revokeObjectURL(link.href); // Clean up the URL object
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文本链接转换工具</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .text-box {
+    flex: 1;
+    position: relative;
+  }
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  .controls {
+    margin-top: 10px;
+  }
+  button {
+    padding: 8px 16px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #copyButton {
+    background-color: #28a745;
+    color: white;
+  }
+  #cdnSelect {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="text-box">
+    <h3>粘贴文本链接</h3>
+    <textarea id="inputText" placeholder="在这里粘贴你的文本..."></textarea>
+    <div class="controls">
+      <select id="cdnSelect">
+        <option value="none">选择图片CDN加速服务</option>
+        <optgroup label="WordPress 服务">
+          <option value="i0">i0</option>
+          <option value="i1">i1</option>
+          <option value="i2">i2</option>
+          <option value="i3">i3</option>
+        </optgroup>
+      </select>
+      <button onclick="generateText()">生成文本</button>
+    </div>
+  </div>
+  <div class="text-box">
+    <h3>生成的文本</h3>
+    <textarea id="outputText" readonly></textarea>
+    <div class="controls">
+      <button id="copyButton" onclick="copyToClipboard()">复制到剪贴板</button>
+    </div>
+  </div>
+</div>
+
+<script>
+function generateText() {
+  const inputText = document.getElementById('inputText').value;
+  const cdnOption = document.getElementById('cdnSelect').value;
+  let outputText = inputText;
+
+  if (cdnOption.startsWith('i') && ['i0', 'i1', 'i2', 'i3'].includes(cdnOption)) {
+    // Regular expression to match image URLs
+    const imgUrlRegex = /https?:\/\/[^\s]+/g;
+    // Replace matched URLs with the CDN URL
+    outputText = inputText.replace(imgUrlRegex, (match) => {
+      // Ensure the URL starts with https:// and replace it with the selected CDN
+      return `https://${cdnOption}.wp.com/${match.slice(match.indexOf('/') + 2)}`;
+    });
+  }
+
+  document.getElementById('outputText').value = outputText;
+}
+
+function copyToClipboard() {
+  const outputText = document.getElementById('outputText');
+  outputText.select();
+  outputText.setSelectionRange(0, 99999); // For mobile devices
+  navigator.clipboard.writeText(outputText.value).then(() => {
+    alert('文本已复制到剪贴板！');
+  }).catch(err => {
+    console.error('未能复制文本: ', err);
+    // Fallback for older browsers that do not support navigator.clipboard
+    document.execCommand('copy');
+    alert('文本已复制到剪贴板！');
+  });
+}
+</script>
+
+</body>
+</html>
