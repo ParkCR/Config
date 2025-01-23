@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>链接转换器</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        input[type="text"] {
+            width: calc(100% - 130px);
+            padding: 10px;
+            margin-bottom: 10px;
+            float: left;
+        }
+        #openButton {
+            padding: 10px 20px;
+            margin-left: 10px;
+            float: left;
+            cursor: pointer;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        label {
+            display: inline-block;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="clearfix">
+        <input type="text" id="urlInput" placeholder="请输入链接" onkeypress="handleKeyPress(event)">
+        <button id="openButton" onclick="openConvertedPage()">打开</button>
+    </div>
+    <div class="options">
+        <label><input type="radio" name="service" value="daum" onclick="selectService('daum')">Daum节点</label>
+        <label><input type="radio" name="service" value="weserv" onclick="selectService('weserv')">Weserv节点</label>
+        <label><input type="radio" name="service" value="wsrv" onclick="selectService('wsrv')">wsrv节点</label>
+        <label><input type="radio" name="service" value="flyimg" onclick="selectService('flyimg')">Flyimg节点</label>
+        <label><input type="radio" name="service" value="imagizer" onclick="selectService('imagizer')">Imagizer节点</label>
+        <label><input type="radio" name="service" value="picseed" onclick="selectService('picseed')">Picseed节点</label>
+        <label><input type="radio" name="service" value="cdnjson" onclick="selectService('cdnjson')">CDNjson节点</label>
+        <label><input type="radio" name="service" value="zeroms" onclick="selectService('zeroms')">0ms节点</label>
+        <label><input type="radio" name="service" value="ezgif" onclick="selectService('ezgif')">Ezgif节点</label>
+    </div>
+</div>
+
+<script>
+    let selectedService = '';
+
+    function selectService(service) {
+        selectedService = service;
+    }
+
+    function openConvertedPage() {
+        const url = document.getElementById('urlInput').value;
+        if (!url || !selectedService) {
+            alert('请输入链接并选择服务');
+            return;
+        }
+
+        let convertedUrl = url;
+        if (selectedService === 'daum') {
+            convertedUrl = `https://t2.daumcdn.net/thumb/R1000x0/?fname=${encodeURIComponent(url)}`;
+        } else if (selectedService === 'weserv') {
+            convertedUrl = `https://images.weserv.nl/?url=${encodeURIComponent(url)}`;
+        } else if (selectedService === 'wsrv') {
+            // 去掉协议部分 (http/https)
+            const cleanedUrl = url.replace(/^https?:\/\//, '');
+            convertedUrl = `https://wsrv.nl/?url=${encodeURIComponent(cleanedUrl)}`;
+            // 检查是否为 GIF 格式
+            if (cleanedUrl.toLowerCase().endsWith('.gif')) {
+                convertedUrl += '&n=-1';
+            }
+        } else if (selectedService === 'flyimg') {
+            convertedUrl = `https://demo.flyimg.io/upload/q_100/${encodeURIComponent(url)}`;
+        } else if (selectedService === 'imagizer') {
+            convertedUrl = `https://examples.imagizer.com/?source_url=${encodeURIComponent(url)}`;
+        } else if (selectedService === 'picseed') {
+            convertedUrl = `https://cdn1.picseed.com/?url=${encodeURIComponent(url)}`;
+        } else if (selectedService === 'cdnjson') {
+            convertedUrl = `https://cdn.cdnjson.com/pic.html?url=${encodeURIComponent(url)}`;
+        } else if (selectedService === 'zeroms') {
+            convertedUrl = `https://x.0ms.dev/q70/${encodeURIComponent(url)}`;
+        } else if (selectedService === 'ezgif') {
+            // 检查是否为 GIF 格式
+            if (url.toLowerCase().endsWith('.gif')) {
+                convertedUrl = `https://ezgif.com/optimize?url=${encodeURIComponent(url)}`;
+            } else if (url.toLowerCase().endsWith('.png')) {
+                convertedUrl = `https://ezgif.com/optipng?url=${encodeURIComponent(url)}`;
+            } else {
+                convertedUrl = `https://ezgif.com/optijpeg?url=${encodeURIComponent(url)}`;
+            }
+        } else {
+            // 这里可以添加其他服务的转换逻辑
+            convertedUrl = `${url}?service=${selectedService}`;
+        }
+
+        window.open(convertedUrl, '_blank');
+    }
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            openConvertedPage();
+        }
+    }
+</script>
+</body>
+</html>
+
+
+
