@@ -90,8 +90,8 @@
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "priv.au",
-                "url": "https://priv.au/search?q=%s",
+                "name": "imin",
+                "url": "https://search.im-in.space/search?q=%s",
                 "blank": "_blank"
             },
             {
@@ -330,15 +330,9 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=search.sciphi.ai",
-                "name": "Sciphi",
-                "url": "https://search.sciphi.ai/search?q=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=promptide.me",
-                "name": "Promptide",
-                "url": "https://promptide.me/search?q=%s",
+                "favicon": "https://www.google.com/s2/favicons?domain=hika.fyi",
+                "name": "hika",
+                "url": "https://hika.fyi/search?question=%s",
                 "blank": "_blank"
             },
             {
@@ -366,40 +360,51 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=yep.com",
-                "name": "Yep",
-                "url": "https://yep.com/web?q=%s",
-                "blank": "_blank"
-            },
-            {
                 "favicon": "https://www.google.com/s2/favicons?domain=www.zaiwen.top",
                 "name": "在问",
                 "url": "https://www.zaiwen.top/",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=www.perplexity.ai",
-                "name": "Perplexity",
-                "url": "https://www.perplexity.ai/",
+                "favicon": "https://www.google.com/s2/favicons?domain=yep.com",
+                "name": "Yep",
+                "url": "https://yep.com/web?q=%s",
                 "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=search.sciphi.ai",
+                "name": "Sciphi",
+                "url": "https://search.sciphi.ai/search?q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.perplexity.ai",
+                "name": "墙-Perplexity",
+                "url": "https://www.perplexity.ai/",
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=thinkany.ai",
-                "name": "Thinkany",
+                "name": "墙-Thinkany",
                 "url": "https://thinkany.ai/",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=aoyo.ai",
-                "name": "Aoyo",
+                "name": "墙-Aoyo",
                 "url": "https://aoyo.ai/search/?q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=www.sou100.com",
                 "name": "知料觅得",
                 "url": "https://www.sou100.com/search/?q=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             }
         ],
         "translate": [
@@ -723,7 +728,7 @@
         "music": [
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=xgequ.com",
-                "name": "新歌曲网",
+                "name": "无忧音乐网",
                 "url": "http://www.qeecc.com/so/%s.html",
                 "blank": "_blank"
             },
@@ -737,6 +742,36 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=www.2t58.com",
                 "name": "2t58",
                 "url": "http://www.2t58.com/so/%s.html",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hhlqilongzhu.cn",
+                "name": "酷狗-龙珠",
+                "url": "https://www.hhlqilongzhu.cn/api/dg_kgmusic.php?gm=%s&n=",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hhlqilongzhu.cn",
+                "name": "咪咕-龙珠",
+                "url": "https://www.hhlqilongzhu.cn/api/dg_mgmusic.php?gm=%s&n=",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hhlqilongzhu.cn",
+                "name": "网易-龙珠",
+                "url": "https://www.hhlqilongzhu.cn/api/dg_wyymusic.php?gm=%s&n=&num=",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hhlqilongzhu.cn",
+                "name": "酷我-无损-龙珠",
+                "url": "https://www.hhlqilongzhu.cn/api/dg_kuwomusic.php?msg=%s&n=",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hhlqilongzhu.cn",
+                "name": "波点-无损-龙珠",
+                "url": "https://www.hhlqilongzhu.cn/api/dg_BDbdmusic.php?gm=波点&n=",
                 "blank": "_blank"
             },
             {
