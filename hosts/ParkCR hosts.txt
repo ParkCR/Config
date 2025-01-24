@@ -180,6 +180,8 @@
 172.64.90.33             ugj.net
 172.64.90.33            www.picnob.com
 172.64.90.33            www.jav321.com
+172.64.90.33                nsfwmag.com
+104.21.42.233               www.minnano-av.com
 
 # 104.21.235.180          buondua.com
 # Nsfw End
@@ -362,5 +364,6 @@
 192.3.86.131                quickbypass.com
 192.3.86.131                thebestproxy.org
 192.3.86.131                costfreezone.com
+167.71.43.43                www.croxyproxy.rocks
 
 # 未分类 End
