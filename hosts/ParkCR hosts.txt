@@ -183,6 +183,7 @@
 104.22.19.69                nsfwmag.com
 104.21.42.233               www.minnano-av.com
 69.36.160.170          ero-video.net
+104.22.19.69            etoland.co.kr
 
 # 104.21.235.180          buondua.com
 # Nsfw End
