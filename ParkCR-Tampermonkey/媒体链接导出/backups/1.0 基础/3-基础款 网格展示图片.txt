@@ -1,0 +1,204 @@
+// ==UserScript==
+// @name         图片链接导出工具
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  点击按钮获取当前页面的所有图片链接，并提供导出功能
+// @author       您的名字
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // 创建按钮
+    function createButton() {
+        const button = document.createElement('button');
+        button.innerText = '获取图片链接';
+        button.style.position = 'fixed';
+        button.style.top = '10px';
+        button.style.right = '10px';
+        button.style.zIndex = '1000';
+        button.onclick = openModal;
+        document.body.appendChild(button);
+    }
+
+    // 打开模态窗口
+    function openModal() {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'flex-start'; // 修改对齐方式
+        modal.style.zIndex = '1001';
+
+        const modalContent = document.createElement('div');
+        modalContent.style.background = '#fff';
+        modalContent.style.padding = '20px';
+        modalContent.style.borderRadius = '5px';
+        modalContent.style.maxWidth = '90vw'; // 最大宽度为视窗的90%
+        modalContent.style.maxHeight = '90vh'; // 最大高度为视窗的90%
+        modalContent.style.overflowY = 'auto'; // 垂直滚动条
+        modalContent.style.boxSizing = 'border-box';
+        modalContent.style.display = 'flex';
+        modalContent.style.flexDirection = 'column';
+
+        // 添加关闭按钮
+        const closeButton = document.createElement('button');
+        closeButton.innerText = '关闭';
+        closeButton.onclick = () => document.body.removeChild(modal);
+        modalContent.appendChild(closeButton);
+
+        // 尺寸筛选部分
+        const sizeFilterContainer = document.createElement('div');
+        sizeFilterContainer.style.display = 'flex';
+        sizeFilterContainer.style.alignItems = 'center';
+        sizeFilterContainer.style.marginBottom = '20px';
+
+        const minWidthLabel = document.createElement('label');
+        minWidthLabel.innerText = '最小宽度:';
+        sizeFilterContainer.appendChild(minWidthLabel);
+
+        const minWidthSlider = document.createElement('input');
+        minWidthSlider.type = 'range';
+        minWidthSlider.min = '0';
+        minWidthSlider.max = '2000';
+        minWidthSlider.value = '0';
+        minWidthSlider.style.width = '150px';
+        sizeFilterContainer.appendChild(minWidthSlider);
+
+        const minWidthValue = document.createElement('span');
+        minWidthValue.innerText = minWidthSlider.value;
+        sizeFilterContainer.appendChild(minWidthValue);
+
+        const minHeightLabel = document.createElement('label');
+        minHeightLabel.innerText = '最小高度:';
+        sizeFilterContainer.appendChild(minHeightLabel);
+
+        const minHeightSlider = document.createElement('input');
+        minHeightSlider.type = 'range';
+        minHeightSlider.min = '0';
+        minHeightSlider.max = '2000';
+        minHeightSlider.value = '0';
+        minHeightSlider.style.width = '150px';
+        sizeFilterContainer.appendChild(minHeightSlider);
+
+        const minHeightValue = document.createElement('span');
+        minHeightValue.innerText = minHeightSlider.value;
+        sizeFilterContainer.appendChild(minHeightValue);
+
+        // 更新尺寸值
+        function updateSizeValues() {
+            minWidthValue.innerText = minWidthSlider.value;
+            minHeightValue.innerText = minHeightSlider.value;
+            filterImages();
+        }
+
+        minWidthSlider.oninput = updateSizeValues;
+        minHeightSlider.oninput = updateSizeValues;
+
+        modalContent.appendChild(sizeFilterContainer);
+
+        // 图片列表容器
+        const imageListContainer = document.createElement('div');
+        imageListContainer.style.display = 'grid';
+        imageListContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(120px, 1fr))';
+        imageListContainer.style.gap = '10px';
+        imageListContainer.style.marginBottom = '20px';
+        modalContent.appendChild(imageListContainer);
+
+        // 全选按钮
+        const selectAllButton = document.createElement('button');
+        selectAllButton.innerText = '全选';
+        selectAllButton.onclick = () => {
+            const allChecked = checkboxes.every(cb => cb.checked);
+            checkboxes.forEach(cb => cb.checked = !allChecked);
+            if (allChecked) {
+                selectAllButton.innerText = '全选';
+            } else {
+                selectAllButton.innerText = '取消全选';
+            }
+        };
+        modalContent.appendChild(selectAllButton);
+
+        // 导出按钮
+        const exportButton = document.createElement('button');
+        exportButton.innerText = '导出';
+        exportButton.onclick = () => {
+            const selectedImages = Array.from(modalContent.querySelectorAll('input[type="checkbox"]:checked'))
+                .map(cb => cb.value);
+            exportImages(selectedImages);
+        };
+        modalContent.appendChild(exportButton);
+
+        // 获取所有图片并添加到模态窗口
+        const images = Array.from(document.querySelectorAll('img'));
+        const checkboxes = [];
+
+        function filterImages() {
+            const minWidth = parseInt(minWidthSlider.value, 10);
+            const minHeight = parseInt(minHeightSlider.value, 10);
+            imageListContainer.innerHTML = ''; // 清空现有图片
+            images.forEach(img => {
+                if (img.naturalWidth >= minWidth && img.naturalHeight >= minHeight) {
+                    const imgElement = document.createElement('img');
+                    imgElement.src = img.src;
+                    imgElement.style.maxWidth = '100%';
+                    imgElement.style.height = 'auto';
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = img.src;
+                    checkboxes.push(checkbox);
+
+                    const imgWrapper = document.createElement('div');
+                    imgWrapper.style.display = 'flex';
+                    imgWrapper.style.flexDirection = 'column';
+                    imgWrapper.style.alignItems = 'center';
+                    imgWrapper.appendChild(checkbox);
+                    imgWrapper.appendChild(imgElement);
+
+                    imageListContainer.appendChild(imgWrapper);
+                }
+            });
+        }
+
+        filterImages(); // 初始加载时过滤图片
+
+        modal.appendChild(modalContent);
+        document.body.appendChild(modal);
+    }
+
+    // 导出图片链接
+    function exportImages(images) {
+        const format = prompt('请选择导出格式 (json/md/txt):', 'json');
+        let content = '';
+        switch(format.toLowerCase()) {
+            case 'json':
+                content = JSON.stringify(images);
+                break;
+            case 'md':
+                content = images.map(url => `![](${url})`).join('\n');
+                break;
+            case 'txt':
+                content = images.join('\n');
+                break;
+            default:
+                alert('未知格式！');
+                return;
+        }
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `images.${format}`;
+        a.click();
+    }
+
+    // 初始化
+    createButton();
+})();

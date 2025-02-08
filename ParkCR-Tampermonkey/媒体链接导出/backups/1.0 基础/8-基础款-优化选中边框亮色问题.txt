@@ -1,0 +1,303 @@
+// ==UserScript==
+// @name         媒体链接导出工具
+// @namespace    http://tampermonkey.net/
+// @version      1.8
+// @description  点击按钮获取当前页面的所有媒体链接，并提供导出功能
+// @author       您的名字
+// @match        *://*/*
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // 创建按钮
+    function createButton() {
+        const button = document.createElement('button');
+        button.innerText = '获取媒体链接';
+        button.style.position = 'fixed';
+        button.style.top = '10px';
+        button.style.right = '10px';
+        button.style.zIndex = '1000';
+        button.onclick = openModal;
+        document.body.appendChild(button);
+    }
+
+    // 打开模态窗口
+    function openModal() {
+        const modal = document.createElement('div');
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.backgroundColor = 'rgba(0,0,0,0.5)';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'flex-start'; // 修改对齐方式
+        modal.style.zIndex = '1001';
+
+        const modalContent = document.createElement('div');
+        modalContent.style.background = '#fff';
+        modalContent.style.padding = '20px';
+        modalContent.style.borderRadius = '5px';
+        modalContent.style.maxWidth = '90vw'; // 最大宽度为视窗的90%
+        modalContent.style.maxHeight = '90vh'; // 最大高度为视窗的90%
+        modalContent.style.overflowY = 'auto'; // 垂直滚动条
+        modalContent.style.boxSizing = 'border-box';
+        modalContent.style.display = 'flex';
+        modalContent.style.flexDirection = 'column';
+
+        // 尺寸筛选部分
+        const sizeFilterContainer = document.createElement('div');
+        sizeFilterContainer.style.display = 'flex';
+        sizeFilterContainer.style.alignItems = 'center';
+        sizeFilterContainer.style.justifyContent = 'center'; // 居中对齐
+        sizeFilterContainer.style.marginBottom = '20px';
+
+        const minWidthLabel = document.createElement('label');
+        minWidthLabel.innerText = '最小宽度:';
+        sizeFilterContainer.appendChild(minWidthLabel);
+
+        const minWidthSlider = document.createElement('input');
+        minWidthSlider.type = 'range';
+        minWidthSlider.min = '0';
+        minWidthSlider.max = '2000';
+        minWidthSlider.value = '0';
+        minWidthSlider.style.width = '150px';
+        sizeFilterContainer.appendChild(minWidthSlider);
+
+        const minWidthValue = document.createElement('span');
+        minWidthValue.innerText = minWidthSlider.value;
+        sizeFilterContainer.appendChild(minWidthValue);
+
+        const minHeightLabel = document.createElement('label');
+        minHeightLabel.innerText = '最小高度:';
+        sizeFilterContainer.appendChild(minHeightLabel);
+
+        const minHeightSlider = document.createElement('input');
+        minHeightSlider.type = 'range';
+        minHeightSlider.min = '0';
+        minHeightSlider.max = '2000';
+        minHeightSlider.value = '0';
+        minHeightSlider.style.width = '150px';
+        sizeFilterContainer.appendChild(minHeightSlider);
+
+        const minHeightValue = document.createElement('span');
+        minHeightValue.innerText = minHeightSlider.value;
+        sizeFilterContainer.appendChild(minHeightValue);
+
+        // 更新尺寸值
+        function updateSizeValues() {
+            minWidthValue.innerText = minWidthSlider.value;
+            minHeightValue.innerText = minHeightSlider.value;
+            filterMedia();
+        }
+
+        minWidthSlider.oninput = updateSizeValues;
+        minHeightSlider.oninput = updateSizeValues;
+
+        modalContent.appendChild(sizeFilterContainer);
+
+        // 按钮容器
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.style.display = 'flex';
+        buttonsContainer.style.justifyContent = 'space-between';
+        buttonsContainer.style.marginBottom = '20px';
+
+        // 关闭按钮
+        const closeButton = document.createElement('button');
+        closeButton.innerText = '关闭';
+        closeButton.onclick = () => closeModal(modal);
+        buttonsContainer.appendChild(closeButton);
+
+        // 全选按钮
+        const selectAllButton = document.createElement('button');
+        selectAllButton.innerText = '全选';
+        selectAllButton.onclick = () => {
+            const allChecked = checkboxes.every(cb => cb.checked);
+            checkboxes.forEach(cb => {
+                cb.checked = !allChecked;
+                updateMediaBorder(cb, cb.parentElement.querySelector('img, video'));
+            });
+            if (allChecked) {
+                selectAllButton.innerText = '全选';
+            } else {
+                selectAllButton.innerText = '取消全选';
+            }
+        };
+        buttonsContainer.appendChild(selectAllButton);
+
+        // 反选按钮
+        const invertSelectionButton = document.createElement('button');
+        invertSelectionButton.innerText = '反选';
+        invertSelectionButton.onclick = () => {
+            checkboxes.forEach(cb => {
+                cb.checked = !cb.checked;
+                updateMediaBorder(cb, cb.parentElement.querySelector('img, video'));
+            });
+        };
+        buttonsContainer.appendChild(invertSelectionButton);
+
+        // 导出按钮
+        const exportButton = document.createElement('button');
+        exportButton.innerText = '导出';
+        exportButton.onclick = () => {
+            const selectedMedia = Array.from(modalContent.querySelectorAll('input[type="checkbox"]:checked'))
+                .map(cb => cb.value);
+            exportMedia(selectedMedia);
+        };
+        buttonsContainer.appendChild(exportButton);
+
+        modalContent.appendChild(buttonsContainer);
+
+        // 媒体列表容器
+        const mediaListContainer = document.createElement('div');
+        mediaListContainer.style.display = 'grid';
+        mediaListContainer.style.gridTemplateColumns = 'repeat(auto-fill, minmax(120px, 1fr))';
+        mediaListContainer.style.gap = '10px';
+        mediaListContainer.style.marginBottom = '20px';
+        modalContent.appendChild(mediaListContainer);
+
+        // 获取所有媒体并添加到模态窗口
+        const mediaElements = Array.from(document.querySelectorAll('img, video, source[type="image/gif"]'));
+        const checkboxes = [];
+        let lastClickedCheckbox = null;
+
+        function filterMedia() {
+            const minWidth = parseInt(minWidthSlider.value, 10);
+            const minHeight = parseInt(minHeightSlider.value, 10);
+            mediaListContainer.innerHTML = ''; // 清空现有媒体
+
+            mediaElements.forEach((media, index) => {
+                const isImage = media.tagName === 'IMG' || (media.tagName === 'SOURCE' && media.type === 'image/gif');
+                const isVideo = media.tagName === 'VIDEO';
+                const naturalWidth = isImage ? media.naturalWidth : media.videoWidth;
+                const naturalHeight = isImage ? media.naturalHeight : media.videoHeight;
+
+                if (naturalWidth >= minWidth && naturalHeight >= minHeight) {
+                    const mediaElement = isImage ? media.cloneNode() : media.cloneNode();
+                    mediaElement.style.maxWidth = '100%';
+                    mediaElement.style.height = 'auto';
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.value = media.src || media.currentSrc || media.getAttribute('data-src') || media.parentNode.src;
+                    checkboxes.push(checkbox);
+
+                    const mediaWrapper = document.createElement('div');
+                    mediaWrapper.style.position = 'relative';
+                    mediaWrapper.style.cursor = 'pointer';
+                    mediaWrapper.appendChild(mediaElement);
+
+                    // 复选框放在媒体的右上角
+                    checkbox.style.position = 'absolute';
+                    checkbox.style.top = '0';
+                    checkbox.style.right = '0';
+                    checkbox.style.zIndex = '1';
+                    mediaWrapper.appendChild(checkbox);
+
+                    // 添加格式标签
+                    const formatLabel = document.createElement('div');
+                    formatLabel.style.position = 'absolute';
+                    formatLabel.style.top = '0';
+                    formatLabel.style.left = '0';
+                    formatLabel.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // 调整透明度
+                    formatLabel.style.color = '#fff';
+                    formatLabel.style.padding = '2px 5px';
+                    formatLabel.style.borderRadius = '3px';
+                    formatLabel.style.fontSize = '12px';
+                    formatLabel.style.zIndex = '2';
+                    formatLabel.innerText = getMediaType(media);
+                    mediaWrapper.appendChild(formatLabel);
+
+                    // 点击媒体切换复选框状态
+                    mediaWrapper.onclick = (event) => {
+                        const shiftKey = event.shiftKey;
+                        const checkboxIndex = checkboxes.indexOf(checkbox);
+
+                        if (shiftKey && lastClickedCheckbox) {
+                            const start = Math.min(lastClickedCheckbox.index, checkboxIndex);
+                            const end = Math.max(lastClickedCheckbox.index, checkboxIndex);
+                            for (let i = start; i <= end; i++) {
+                                checkboxes[i].checked = true;
+                                updateMediaBorder(checkboxes[i], checkboxes[i].parentElement.querySelector('img, video'));
+                            }
+                        } else {
+                            checkbox.checked = !checkbox.checked;
+                            updateMediaBorder(checkbox, mediaElement);
+                        }
+
+                        lastClickedCheckbox = { checkbox, index: checkboxIndex };
+                    };
+
+                    mediaListContainer.appendChild(mediaWrapper);
+                }
+            });
+        }
+
+        function getMediaType(media) {
+            if (media.tagName === 'IMG') {
+                return media.src.split(';').pop().split('/').pop().split('?')[0].split('.').pop();
+            } else if (media.tagName === 'VIDEO') {
+                return media.currentSrc.split(';').pop().split('/').pop().split('?')[0].split('.').pop();
+            } else if (media.tagName === 'SOURCE' && media.type === 'image/gif') {
+                return 'gif';
+            }
+            return 'unknown';
+        }
+
+        function updateMediaBorder(checkbox, mediaElement) {
+            if (checkbox.checked) {
+                mediaElement.style.border = '2px solid #007bff'; // 选中时显示蓝色边框
+            } else {
+                mediaElement.style.border = 'none'; // 未选中时移除边框
+            }
+        }
+
+        filterMedia(); // 初始加载时过滤媒体
+
+        modal.appendChild(modalContent);
+        document.body.appendChild(modal);
+
+        // 监听点击事件，点击模态窗口外部关闭模态窗口
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal(modal);
+            }
+        });
+    }
+
+    // 关闭模态窗口
+    function closeModal(modal) {
+        document.body.removeChild(modal);
+    }
+
+    // 导出媒体链接
+    function exportMedia(media) {
+        const format = prompt('请选择导出格式 (json/md/txt):', 'json');
+        let content = '';
+        switch(format.toLowerCase()) {
+            case 'json':
+                content = `[\n${media.map(url => `"${url}"`).join(',\n')}\n]`;
+                break;
+            case 'md':
+                content = media.map(url => `[](${url})`).join('\n');
+                break;
+            case 'txt':
+                content = media.join('\n');
+                break;
+            default:
+                alert('未知格式！');
+                return;
+        }
+        const blob = new Blob([content], { type: 'text/plain' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `media.${format}`;
+        a.click();
+    }
+
+    // 初始化
+    createButton();
+})();
