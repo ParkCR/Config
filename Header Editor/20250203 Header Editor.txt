@@ -653,6 +653,18 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://i2.wp.com/$2"
+		},
+		{
+			"enable": true,
+			"name": "bakufu.jp加速大尺寸",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://(img.bakufu.jp/wp-content/uploads/.*)\\-.*(\\.jpg)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i2.wp.com/$1$2"
 		}
 	],
 	"sendHeader": [
