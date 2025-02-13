@@ -9,7 +9,7 @@
 // @exclude      https://fapreactor.com/*
 // @exclude      https://*.boombo.biz/*
 // @grant        none
-// @changelog    2.2: 支持blogger.googleusercontent，imgur
+// @changelog    2.2: 支持blogger.googleusercontent，imgur,24fa
 //               2.1.1: 移除手机触摸事件
 //               2.1: 封装悬浮按钮
 //               2.0: 优化性能，增加全局移除加速效果
@@ -45,6 +45,8 @@
     const blogspotRegex = /^http(s)?:\/\/\d\.bp\.blogspot\.com\/.*/;
     const bloggerRegex = /^http(s)?:\/\/blogger.googleusercontent.com\/img\/.*/;
     const imgurRegex = /^http(s)?:\/\/i.imgur.com\/.*/;
+    // 新增 24fa 正则表达式，用于匹配以 http(s)://www.(366.mom|336.one|246.one)/upload/ 开头的图片链接
+    const fa24Regex = /^http(s)?:\/\/(www\.(366\.mom|336\.one|246\.one)\/upload\/.*)/;
 
     // 随机生成i0 - i3
     function getRandomPrefix() {
@@ -110,7 +112,7 @@
     try {
         const imgSrc = image.src;
         // 在 isMatch 判断中新增 bloggerRegex.test(imgSrc)，使得以 blogger.googleusercontent.com/img/ 开头的图片链接也能被匹配到
-        const isMatch = prefixRegex.test(imgSrc) || buonduaRegex.test(imgSrc) || livedoorRegex.test(imgSrc) || twimgRegex.test(imgSrc) || blogspotRegex.test(imgSrc) || bloggerRegex.test(imgSrc) || imgurRegex.test(imgSrc);
+        const isMatch = prefixRegex.test(imgSrc) || buonduaRegex.test(imgSrc) || livedoorRegex.test(imgSrc) || twimgRegex.test(imgSrc) || blogspotRegex.test(imgSrc) || bloggerRegex.test(imgSrc) || imgurRegex.test(imgSrc) || fa24Regex.test(imgSrc);
 
         if (isMatch) {
             let replacedUrl;
