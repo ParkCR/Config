@@ -582,16 +582,17 @@
 			"to": " https://i0.wp.com/$1"
 		},
 		{
-			"enable": true,
-			"name": "*.bp.blogspot.com",
+			"enable": false,
+			"name": "*.bp.blogspot.com （weserv节点排除gif）",
 			"ruleType": "redirect",
 			"matchType": "regexp",
 			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*)",
-			"exclude": "",
+			"exclude": "^http(s)?://(\\d+\\.bp\\.blogspot\\.com\\/.*\\.gif)",
 			"group": "ParkCR自定义",
 			"isFunction": false,
 			"action": "redirect",
-			"to": "https://images.weserv.nl/?url=$1"
+			"to": "https://images.weserv.nl/?url=$1",
+			"_exclude": {}
 		},
 		{
 			"enable": true,
@@ -665,6 +666,30 @@
 			"isFunction": false,
 			"action": "redirect",
 			"to": "https://i2.wp.com/$1$2"
+		},
+		{
+			"enable": false,
+			"name": "*.bp.blogspot.com (weserv节点gif专供）",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*\\.gif)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://images.weserv.nl/?url=$1&n=-1"
+		},
+		{
+			"enable": true,
+			"name": "*.bp.blogspot.com (Daum节点)",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://t2.daumcdn.net/thumb/R2000x0/?fname=$1"
 		}
 	],
 	"sendHeader": [
