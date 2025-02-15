@@ -1,0 +1,1341 @@
+{
+	"request": [
+		{
+			"enable": true,
+			"name": "Sourceforge下载 >> 镜像站点",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/sourceforge\\.net\\/projects\\/(((\\w)\\w).*)\\/files\\/(.*)\\/download",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "http://master.dl.sourceforge.net/project/$1/$4",
+			"group": "未分组"
+		},
+		{
+			"enable": false,
+			"name": "Google中文 >> Google英文",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.google\\.(?:co|com)\\.(?:hk|jp|sg|kr)\\/(?:s\\?|search\\?|webhp\\?|.*\\&safe=strict)(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.google.com/ncr#$1&hl=en-US&safe=off",
+			"group": "未分组"
+		},
+		{
+			"enable": false,
+			"name": "FT中文网 >> 全文",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.ftchinese\\.com\\/story\\/(\\d+)(.*?)$",
+			"exclude": "^https?:\\/\\/www\\.ftchinese\\.com\\/story\\/(\\d+)\\/en",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "http://www.ftchinese.com/story/$1?full=y",
+			"_exclude": {},
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "Zhihu去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/link\\.zhihu\\.com\\/\\?target=(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "AMO去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/outgoing\\.(mozilla\\.org|prod\\.mozaws\\.net)\\/v\\d+/\\w+/(.+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$2",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "Pocket去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/getpocket\\.com\\/redirect\\?url=(.*)&formCheck=.*$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "百度网盘去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.+\\?url=((https?:\\/\\/)?pan\\.baidu\\.com\\/s\\/.+)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "Youtube去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.youtube\\.com\\/redirect\\?redir_token(.*)&q=(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$2",
+			"group": "未分组"
+		},
+		{
+			"enable": false,
+			"name": "google fonts >> 极客族",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/fonts\\.googleapis\\.com\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://fonts.geekzu.org/$1",
+			"group": "未分组"
+		},
+		{
+			"enable": false,
+			"name": "google ajax >> 极客族",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/ajax\\.googleapis\\.com\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://gapis.geekzu.org/ajax/$1",
+			"group": "未分组"
+		},
+		{
+			"enable": false,
+			"name": "google themes >> 极客族",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/themes\\.googleusercontent\\.com\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://gapis.geekzu.org/g-themes/$1",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "Wiki繁体 >> 简体",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/zh\\.wikipedia\\.org\\/(zh-tw|wiki)\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://zh.wikipedia.org/zh-cn/$2",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "常用hosts网站 http >> https",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http://(.*)?(youtube|google|wordpress|github|twitter|deviantart|facebook|pinterest|vimeo|feedly|flickr|quora|instagram|duckduckgo|telegram|archive|wikipedia)(\\.org|\\.com)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://$1$2$3",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "奶酪网站去跳转",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.runningcheese\\.com\\/go\\/\\?url=(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "$1",
+			"group": "未分组"
+		},
+		{
+			"enable": true,
+			"name": "Wikiwand繁体-->简体",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.wikiwand\\.com\\/(zh|zh-.*)\\/(.*)$",
+			"exclude": "",
+			"group": "未分组",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.wikiwand.com/zh-cn/$2"
+		},
+		{
+			"enable": true,
+			"name": "常用网站 http >> https",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http://(.*)?(youtube|google|wordpress|github|twitter|deviantart|facebook|pinterest|vimeo|feedly|flickr|quora|instagram|duckduckgo|telegram|archive|wikipedia)(\\.org|\\.com)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://$1$2$3",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "Google 中文 >> Google 英文",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/www\\.google\\.(?:co|com)\\.(?:hk|jp|sg|kr)\\/(?:s\\?|search\\?|webhp\\?|.*\\&safe=strict)(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.google.com/ncr#$1&hl=en-US&safe=off",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "Bing 国内 >> Bing 国际",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://cn\\.bing\\.com/search\\?(.*)",
+			"exclude": "^https://cn\\.bing\\.com.*ensearch=1.*",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://cn.bing.com/search?$1&ensearch=1",
+			"group": "重定向",
+			"_exclude": {}
+		},
+		{
+			"enable": false,
+			"name": "Google Fonts >> loli.net",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://fonts\\.googleapis\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://fonts.loli.net/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "Google Ajax >> loli.net",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://ajax\\.googleapis\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://ajax.loli.net/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "Google Themes >> loli.net",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://themes\\.googleusercontent\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://themes.loli.net/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "Google Gstatic >> loli.net",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://fonts\\.gstatic\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://gstatic.loli.net/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "维基百科繁体 >> 简体",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://zh\\.wikipedia\\.org/(zh-tw|wiki)\\/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://zh.wikipedia.org/zh-cn/$2",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "蓝奏云失效链接 zous  >> zouv",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)\\.lanzous\\.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://$1.lanzouv.com/$2",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "蓝奏云自定义链接 >> www",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(.*)\\.lanzou(.*)\\.com/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.lanzou$2.com/$3",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "Userstyles.world  >> xStyle",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://userstyles\\.world/api/style/(.*)\\.user\\.css$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://ext.firefoxcn.net/xstyle/install/open.html?name=%E6%A0%B7%E5%BC%8F$1&code=https://userstyles.world/api/style/$1.user.css",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "Chrome 商店 >> Crxsoso 镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://chrome\\.google\\.com/webstore/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.crxsoso.com/webstore/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "谷歌学术  >> Panda 镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://scholar\\.google\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://sc.panda321.com/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "谷歌验证 >> recaptcha.net",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://www.google.com/recaptcha/api.js(.*)$",
+			"exclude": "",
+			"group": "重定向",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://recaptcha.net/recaptcha/api.js"
+		},
+		{
+			"enable": false,
+			"name": "谷歌翻译 >> google.cn",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://translate\\.google\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://translate.google.cn/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "谷歌图标 >> google.cn",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://www\\.google\\.com/s2/favicons\\?domain\\=(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://t1.gstatic.cn/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "Gravatar头像 >> 七牛镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://secure\\.gravatar\\.com/(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://dn-qiniu-avatar.qbox.me/avatar/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "谷歌搜索  >> Fsou 镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://www\\.google\\.com/search(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://fsoufsou.com/search$1",
+			"group": "重定向"
+		},
+		{
+			"enable": false,
+			"name": "谷歌搜索  >> 浙大镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://www\\.google\\.com/search(.*)$",
+			"exclude": "答案：心灵之约 | 水朝夕 | csxy@123，演示：https://tvax1.sinaimg.cn/large/7a6a15d5gy1h6xsdkol40j22621d81kx.jpg",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://g.luciaz.me/search$1",
+			"group": "重定向",
+			"_exclude": {}
+		},
+		{
+			"enable": false,
+			"name": "谷歌搜索  >> 谷歌.ml镜像",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://www\\.google\\.com/search(.*)$",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://%E8%B0%B7%E6%AD%8C.ml/search$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "小红书图片  >> 浏览器中打开",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(ci|safe\\-img).(xiaohongshu|xhscdn).com/(.*)",
+			"exclude": "",
+			"isFunction": true,
+			"action": "redirect",
+			"to": "https://images.weserv.nl/?url=https://$1.$2.com/$3",
+			"group": "重定向",
+			"code": "if (detail.type === \"main_frame\") {\n\treturn val.replace(\"https://safe-img.xhscdn.com\", \"https://images.weserv.nl/?url=https://safe-img.xhscdn.com\").replace(\"https://ci.xiaohongshu.com\", \"https://images.weserv.nl/?url=https://ci.xiaohongshu.com\");\n}"
+		},
+		{
+			"enable": true,
+			"name": "Github Raw >> JsDeliver",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://raw\\.githubusercontent\\.com/(.*)(master|main|dev|develop)(.*)$",
+			"exclude": "",
+			"isFunction": true,
+			"action": "redirect",
+			"to": "https://gcore.jsdelivr.net/gh/$1$3",
+			"group": "重定向",
+			"code": "if (detail.type === \"main_frame\") {\n    return val.replace(\"raw.githubusercontent.com\", \"gcore.jsdelivr.net/gh\").replace(\"master/\",\"\").replace(\"main/\",\"\").replace(\"dev/\",\"\").replace(\"develop/\",\"\");\n}"
+		},
+		{
+			"enable": true,
+			"name": "Github 下载 >> ghproxy.com",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://github\\.com/([^/]+/[^/]+(/releases/download/|/archive/refs/).*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://ghproxy.com/https://github.com/$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "U2B 短视频 >> 常规模式",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://www\\.youtube\\.com/shorts/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.youtube.com/watch?v=$1",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "网易新闻 >> 桌面端",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?://(3g|m|wap)\\.(163|zol)\\.com(.cn)?/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://www.$2.com$3/$4",
+			"group": "重定向"
+		},
+		{
+			"enable": true,
+			"name": "imgur 重定向",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://i.imgur.com/)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://cdn.cdnjson.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "redd.it重定向",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://i.redd.it/)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://cdn.cdnjson.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "googleusercontent 重定向",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://blogger.googleusercontent.com/)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://cdn.cdnjson.com/$1"
+		},
+		{
+			"enable": false,
+			"name": "google fonts >> webcache.cn",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/fonts\\.googleapis\\.com\\/(.*)$",
+			"exclude": "",
+			"group": "未分组",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://font.alnk.cn/$1"
+		},
+		{
+			"enable": false,
+			"name": "google ajax >> webcache.cn",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/ajax\\.googleapis\\.com\\/(.*)$",
+			"exclude": "",
+			"group": "未分组",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://lib.webstatic.cn/ajax/$1"
+		},
+		{
+			"enable": true,
+			"name": "buondua 加速",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/(cdn.buondua.com\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i0.wp.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "everia.club图片加速",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/((kumabox|nekobox|quenbox|yunabox|nanabox|imgyagi|takobox)\\.top|(hitsuji|okami|tokage|niwatori)\\.my\\.id\\/wp-content\\/uploads\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i2.wp.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "kopping图片加速",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/(kpopping.com\\/documents\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": " https://i0.wp.com/$1"
+		},
+		{
+			"enable": false,
+			"name": "*.bp.blogspot.com （weserv节点排除gif）",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*)",
+			"exclude": "^http(s)?://(\\d+\\.bp\\.blogspot\\.com\\/.*\\.gif)",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://images.weserv.nl/?url=$1",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "etoland.co.kr",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http(s)?://(etoland.co.kr/data/files/.*)",
+			"exclude": "^http(s)?://(etoland.co.kr/data/files/.*)\\.mp4$",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i3.wp.com/$2",
+			"_exclude": {}
+		},
+		{
+			"enable": true,
+			"name": "twimg",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://(pbs.twimg.com/.*\\.?(jpg|jpeg|png|webp|gif|bmp|tiff|ico|svg)).*",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i1.wp.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "livedoor",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://(livedoor.blogimg.jp/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i3.wp.com/$1"
+		},
+		{
+			"enable": false,
+			"name": "通用版",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https:\\/\\/([^\\/]+\\.[^\\/]+\\/(wp-content\\/uploads|uploads\\/posts|pics\\/post)\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i1.wp.com/$1"
+		},
+		{
+			"enable": true,
+			"name": "24fa",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^http(s)?:\\/\\/(www\\.(366\\.mom|336\\.one|246\\.one)\\/upload\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i2.wp.com/$2"
+		},
+		{
+			"enable": true,
+			"name": "bakufu.jp加速大尺寸",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://(img.bakufu.jp/wp-content/uploads/.*)\\-.*(\\.jpg)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i2.wp.com/$1$2"
+		},
+		{
+			"enable": false,
+			"name": "*.bp.blogspot.com (weserv节点gif专供）",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*\\.gif)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://images.weserv.nl/?url=$1&n=-1"
+		},
+		{
+			"enable": true,
+			"name": "*.bp.blogspot.com (Daum节点)",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^(http(s)?://\\d+\\.bp\\.blogspot\\.com\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://t2.daumcdn.net/thumb/R2000x0/?fname=$1"
+		},
+		{
+			"enable": true,
+			"name": "javdb图片加速",
+			"ruleType": "redirect",
+			"matchType": "regexp",
+			"pattern": "^https://(c0.jdbstatic.com/(covers|avatars|samples)\\/.*)",
+			"exclude": "",
+			"group": "ParkCR自定义",
+			"isFunction": false,
+			"action": "redirect",
+			"to": "https://i0.wp.com/$1"
+		}
+	],
+	"sendHeader": [
+		{
+			"enable": true,
+			"name": "sina图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.sinaimg\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://blog.sina.com.cn/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "isnowfy图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.isnowfy\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "微信图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(qpic|qlogo)\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "waylee图片反盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.waylee\\.net.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "baidu图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*(bdimg|bdstatic|imgsrc\\.baidu)\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.baidu.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "QQ图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*photo\\.store\\.qq\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "tianya图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(laibafile|tianya|tianyablog)\\.(cn|com).*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.tianya.cn/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "126图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*(ph|bimg)\\.126\\.net.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.163.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "chiphell图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*chiphell\\.com\\/data\\/attachment\\/.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.chiphell.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "pconline图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.pconline\\.com\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.pconline.com.cn/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "pixiv图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.pixiv\\.net.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.pixiv.net/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "poco图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.poco\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "autoimg图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.autoimg\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://club.autohome.com.cn/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "douban图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.douban\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.douban.com"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "jiandan图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*jdstatic\\.tankr\\.net.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://jandan.net/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "imanhua图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.mangafiles\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.imanhua.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "tudou图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.tudou\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "http://www.tudou.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "sina图片盗链-2",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*photo\\.sina\\.com\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "得到图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(igetget|luojilab)\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "zol图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(zol|zol-img)\\.com\\.cn.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "postimg图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(postimg|postimage)\\.org.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "yahoo图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*blogs\\.yahoo\\.co\\.jp.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "cnbeta图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*img\\.cnbeta\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": false,
+			"name": "imgur图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.imgur\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "quora图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.quora\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "tumblr图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.tumblr\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "wuyou图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.wuyou\\.net.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "baidu图片盗链-2",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*hiphotos\\.baidu\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "178图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*img.*\\.178\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "gtimg图片盗链",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\gtimg\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": ""
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "economist免订阅",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.economist\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.google.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "wsj免订阅",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.wsj\\.(net|com).*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.facebook.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "ft免订阅",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.ft\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.google.com/"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": true,
+			"name": "statista免订阅",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^https?:\\/\\/.*\\.(statista|statcdn)\\.com.*",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "referer",
+				"value": "https://www.google.com"
+			},
+			"group": "反盗链"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：iPhone",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Firefox",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"group": "用户代理",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0"
+			}
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Chrome",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Android",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Safari",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:48.0) Gecko/20100101 Firefox/48.0"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：iPad",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5355d Safari/8536.25"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：Google爬虫",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "全局用户代理：微信浏览器",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI WindowsWechat QBCore/3.43.901.400 QQBrowser/9.0.2524.400"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": true,
+			"name": "手机版网页不跳转到桌面版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://(m|wap|i|fm|music)\\.(zhihu|juzimi|jandan|bilibili|hupu|ximalaya|xinli001|baidu|douban)(\\.com|\\.org|\\.net|\\.fm)/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": true,
+			"name": "网易云音乐手机版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://music.163.com/m/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		},
+		{
+			"enable": false,
+			"name": "豆瓣FM手机版",
+			"ruleType": "modifySendHeader",
+			"matchType": "regexp",
+			"pattern": "^http(s?)://douban.fm/(.*)",
+			"exclude": "",
+			"isFunction": false,
+			"action": {
+				"name": "user-agent",
+				"value": "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_2 like Mac OS X; en-us) AppleWebKit/528.18 (KHTML, like Gecko) Version/4.0 Mobile/7D11 Safari/528.16"
+			},
+			"group": "用户代理"
+		}
+	],
+	"receiveHeader": [],
+	"receiveBody": []
+}
