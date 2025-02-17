@@ -111,7 +111,7 @@
 104.26.15.129           ytapi.download
 104.26.15.129           cdn03.ytapi.download
 188.114.96.3            souka.xyz
-104.21.44.118           projectjav.com
+104.22.19.69            projectjav.com
 104.21.235.64           www.141jav.com
 198.251.89.38           sukebei.nyaa.si
 104.22.19.69          sukebeisi.sitescrack.host
@@ -182,8 +182,10 @@
 104.22.19.69            www.jav321.com
 104.22.19.69                nsfwmag.com
 104.21.42.233               www.minnano-av.com
-69.36.160.170          ero-video.net
+69.36.160.170           ero-video.net
 104.22.19.69            etoland.co.kr
+104.22.19.69            www.heye.kr
+104.22.19.69            heye.kr
 
 # 104.21.235.180          buondua.com
 # Nsfw End
@@ -292,6 +294,7 @@
 104.22.19.69             www.deepl.com    #-> deepl翻译
 104.22.19.69             static.deepl.com   #-> deepl翻译
 104.22.19.69             proxyway.com
+104.22.19.69             cn-greasyfork.org
 
 # cloudflare End
 
@@ -330,6 +333,7 @@
 85.215.132.56              searx.dresden.network
 5.9.120.158                search.im-in.space
 148.135.82.45              search.ononoki.org
+185.44.83.31               priv.au
 # searxng搜索引擎 End
 
 
