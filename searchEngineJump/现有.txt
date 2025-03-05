@@ -90,49 +90,45 @@
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "imin",
+                "name": "0.5 nordh 图片秒开 有图标",
+                "url": "https://search.nordh.tech/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "0.5 oloke 图片快开 有图标",
+                "url": "https://searx.oloke.xyz/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "0.5 imin 图片秒开 无图标",
                 "url": "https://search.im-in.space/search?q=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "searx.dresden.network",
-                "url": "https://searx.dresden.network/search?q=%s",
+                "name": "0.8 priv 图片秒开 有图标",
+                "url": "https://priv.au/search?q=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
+                "name": "0.4 world 图片慢开 无图标",
+                "url": "https://searxng.world/search?q=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=nyc1.sx.ggtyler.dev",
-                "name": "search.im-in.space",
-                "url": "https://search.im-in.space/search?q=%s",
+                "name": "0.6 website 图片秒开 无图标",
+                "url": "https://searxng.website/search?q=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "Inetol",
-                "url": "https://search.inetol.net/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "Hbubli",
-                "url": "https://search.hbubli.cc/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "Blitzw",
-                "url": "https://search.blitzw.in/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=searx.oakleycord.dev",
-                "name": "Ooglester",
-                "url": "https://ooglester.com/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
+                "name": "0.3 catboy 图片慢开 无图标",
+                "url": "https://search.catboy.house/search?q=%s",
+                "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=4get.thebunny.zone",
@@ -156,6 +152,7 @@
                 "name": "google",
                 "url": "https://so.ntnas.top/search?q=%s",
                 "blank": "_blank",
+                "disable": "true",
                 "gbk": "true"
             },
             {
@@ -180,56 +177,14 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=araa.extravi.dev",
                 "name": "araa1",
                 "url": "https://araa.extravi.dev/search?q=%s&t=text",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=tailsx.com",
                 "name": "araa2",
                 "url": "https://tailsx.com/search?q=%s&t=text",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=search.ahwx.org",
-                "name": "LibreY 1",
-                "url": "https://search.ahwx.org/search.php?q=%s&p=0&t=0",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=fairsuch.net",
-                "name": "fairsuch",
-                "url": "https://fairsuch.net/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=ly.owo.si",
-                "name": "Libre owo",
-                "url": "https://ly.owo.si/search.php?q=%s&p=0&t=0",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=whoogle.ru",
-                "name": "whoogle",
-                "url": "https://whoogle.ru/search?q=%s",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=search.decentrala.org",
-                "name": "LibreX 1",
-                "url": "https://search.decentrala.org/search.php?q=%s&p=0&t=0",
-                "blank": "_blank",
-                "disable": "true"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=searchtld.com",
-                "name": "searchtld",
-                "url": "https://searchtld.com/search?q=%s&pg=0&tp=0",
-                "blank": "_blank",
-                "disable": "true"
+                "blank": "_blank"
             },
             {
                 "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAF8WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDggNzkuMTY0MDM2LCAyMDE5LzA4LzEzLTAxOjA2OjU3ICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjEuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIwLTA4LTAyVDA3OjQzOjU0KzA4OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMC0wOC0wMlQwNzo0NDoyMCswODowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMC0wOC0wMlQwNzo0NDoyMCswODowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2ZjQ0NTJmYy0xY2IzLWQyNDMtODRiMy02MGMxY2Q0Yzk0MTQiIHhtcE1NOkRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDowNGU0NWRjMy02MmY5LTU2NGQtYmY5NS01YWU0ZGVhOTYxOWEiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxY2NhMTM3YS0xODJjLTE4NGQtOGM1YS1jOTQzZGRlMDBlYjAiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjFjY2ExMzdhLTE4MmMtMTg0ZC04YzVhLWM5NDNkZGUwMGViMCIgc3RFdnQ6d2hlbj0iMjAyMC0wOC0wMlQwNzo0Mzo1NCswODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDIxLjAgKFdpbmRvd3MpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2ZjQ0NTJmYy0xY2IzLWQyNDMtODRiMy02MGMxY2Q0Yzk0MTQiIHN0RXZ0OndoZW49IjIwMjAtMDgtMDJUMDc6NDQ6MjArMDg6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCAyMS4wIChXaW5kb3dzKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6Adq1DAAAClUlEQVRYw2P4//8/w0BihlEHDDkHfF06z/RDSVb+m1CPSa/cLJa8cjVf9ibYber7oozCrwtnWdHMAR8bK+JfuZgte+VsuhKI/+PAK0FqPtaXJVHNAd93bZV+7W03l4DFGA557WM/98f+XWIUOeDr8gXGJFqM4ohPXY0hZDsA5HMclq98lxrZ+GX2ZIfvW9Ypf9+6XvHL7CkO79KiGpHUr/zU1xZAURS89rJdgG7x25iAnp9nTrDj0vPz9HH2NxE+fZ+n9HhSlAa+TMjNQvP9yvc5iRV0y4a/d7Lf+ViuAPc9KMvRrRz4e78t4Pce1ntA/P/rZNH/rz1NVn7fsVmWbg74c9ZtKshyGP65TnE/XUvC34dkDiM74M/lyEZ8Bji1fplJLN5/9bcAYQfsZb+D7IC/d2ojiXDAf2Lw0qO/dAbUAfMP/jQmPQouRTRTGAVwB6w68UuDcCI8546SCJ8c0ltPbgJDc8DMg9d/8xKRDTv8YNlw81bF/zYrAhZsuLtHkVTLVxz/pYXuAKILom97OG+2bTD+b7IiGIzdNiRNJdUBIRO+tiMHf8LMb1VEO6D/eFMI0OKVMAeA2DE7S+uItbx8+fd4dN+vxBL/eCsjuzXRc5EcAHaEz6b0vkNPz/Diszx544oyp9aPKIkPFBok14bbHxySQAsFuENCtuW1956b777q1naN1bd3qE29tNQuZU91memKEJD6leYLyv87dj6G+/7wjT/cZDVIFt/YqI/DEQSx6dKE/3Z9p+Ziy/skNcl2PjwiZrcmZi6JDllpvjJs2exLG82p1iitPtYfbbYyZBkBh4CjIH1fXSHNmuULr683zDnQlOu5MXWSxaqwJSCfum1Inpq6t7YYlBZGe0ajDiAVAwCcsjeFTD7reAAAAABJRU5ErkJggg==",
@@ -256,15 +211,9 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=gg.lty.wiki",
-                "name": "gg.lty.wiki",
-                "url": "https://gg.lty.wiki/search?q=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=google.nite07.org",
-                "name": "google.nite07",
-                "url": "https://google.nite07.org/search?q=%s",
+                "favicon": "",
+                "name": "思谋上网",
+                "url": "https://websearch.excite.co.jp/?q=%s&page=1",
                 "blank": "_blank"
             },
             {
@@ -467,18 +416,6 @@
         ],
         "download": [
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=ijavtorrent.com",
-                "name": "ijavbt",
-                "url": "https://ijavtorrent.com/?searchTerm=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=www.hmpdd.icu",
-                "name": "黑猫搜索",
-                "url": "https://www.hmpdd.icu/q/%s",
-                "blank": "_blank"
-            },
-            {
                 "favicon": "https://www.google.com/s2/favicons?domain=javdb.com",
                 "name": "javdb",
                 "url": "https://javdb369.com/search?q=%s&f=all",
@@ -491,34 +428,60 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=mjv003.com",
-                "name": "18av",
-                "url": "https://mjv003.com/zh/fc_search/all/%s/1.html",
+                "favicon": "https://www.google.com/s2/favicons?domain=missav.com",
+                "name": "missav",
+                "url": "https://missav.ws/cn/search/%s",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=missav.com",
-                "name": "missav",
-                "url": "https://missav.com/cn/search/%s",
+                "favicon": "https://www.google.com/s2/favicons?domain=123av.com",
+                "name": "123av",
+                "url": "https://123av.com/en/search?keyword=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=8800ck.cc",
                 "name": "hsck",
-                "url": "http://8201ck.cc/vodsearch/-------------.html?wd={{%s}}&submit=",
+                "url": "http://6306ck.cc/vodsearch/-------------.html?wd={{%s}}&submit=",
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=u9a9.de",
-                "name": "u9a9",
-                "url": "https://u9a9.de/?type=2&search=%s",
+                "favicon": "https://www.google.com/s2/favicons?domain=avname-search.com",
+                "name": "Avname",
+                "url": "https://avname-search.com/?s=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=avairs6.com",
+                "name": "avairs6",
+                "url": "https://avairs6.com/search_result?kw=%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=www.hmpdd.icu",
+                "name": "黑猫搜索",
+                "url": "https://xn--3bs824g.hmaaa.icu/q/%s",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=mjv003.com",
+                "name": "18av",
+                "url": "https://mjv003.com/zh/fc_search/all/%s/1.html",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=ijavtorrent.com",
+                "name": "ijavbt",
+                "url": "https://ijavtorrent.com/?searchTerm=%s",
                 "blank": "_blank"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=projectjav.com",
                 "name": "project jav",
                 "url": "https://projectjav.com/?searchTerm=%s",
-                "blank": "_blank"
+                "blank": "_blank",
+                "disable": "true"
             },
             {
                 "favicon": "https://www.google.com/s2/favicons?domain=u3c3.com",
@@ -554,6 +517,13 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=sukebeisi.sitescrack.host",
                 "name": "sukebeisi",
                 "url": "https://sukebeisi.sitescrack.host/?f=0&c=0_0&q=%s",
+                "blank": "_blank",
+                "disable": "true"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=u9a9.de",
+                "name": "u9a9",
+                "url": "https://u9a9.de/?type=2&search=%s",
                 "blank": "_blank",
                 "disable": "true"
             },
@@ -597,12 +567,6 @@
                 "blank": "_blank"
             },
             {
-                "favicon": "https://www.google.com/s2/favicons?domain=avname-search.com",
-                "name": "Avname",
-                "url": "https://avname-search.com/?s=%s",
-                "blank": "_blank"
-            },
-            {
                 "favicon": "https://www.google.com/s2/favicons?domain=adult-wiki.net",
                 "name": "adult-wiki",
                 "url": "https://adult-wiki.net/search/?keyword=%s",
@@ -612,12 +576,6 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=chiba-f.net",
                 "name": "chiba-f",
                 "url": "https://chiba-f.net/search/?keyword=%s",
-                "blank": "_blank"
-            },
-            {
-                "favicon": "https://www.google.com/s2/favicons?domain=avairs6.com",
-                "name": "avairs6",
-                "url": "https://avairs6.com/search_result?kw=%s",
                 "blank": "_blank"
             },
             {
@@ -991,6 +949,18 @@
                 "favicon": "https://www.google.com/s2/favicons?domain=site.ip138.com",
                 "name": "IP138",
                 "url": "https://site.ip138.com/%s/",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=ytb.841051.xyz",
+                "name": "中文维基搜索",
+                "url": "https://ytb.841051.xyz/aaabbbccc/https/zh.wikipedia.org/w/index.php?search=%s&title=Special%3A%E6%90%9C%E7%B4%A2&ns0=1",
+                "blank": "_blank"
+            },
+            {
+                "favicon": "https://www.google.com/s2/favicons?domain=ytb.841051.xyz",
+                "name": "中文维基百科",
+                "url": "https://ytb.841051.xyz/aaabbbccc/https/zh.wikipedia.org/wiki/%s",
                 "blank": "_blank"
             }
         ],
